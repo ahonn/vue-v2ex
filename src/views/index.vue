@@ -1,3 +1,11 @@
 <template>
-  <h1> Index </h1>
+  <Navbar></Navbar>
 </template>
+
+<script>
+  export default {
+    components: {
+      "Navbar": require('../components/navbar.vue')
+    }
+  }
+</script>

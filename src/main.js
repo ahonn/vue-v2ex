@@ -6,6 +6,8 @@ import routerMap from './routers';
 
 Vue.use(VueRouter);
 
+$.ajaxSettings.crossDomain = true;
+
 let router = new VueRouter();
 
 let app = Vue.extend({});

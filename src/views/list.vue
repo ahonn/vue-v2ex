@@ -1,0 +1,109 @@
+<template>
+  <Navbar
+    :page-type="searchKey.tab"
+    :show-menu.sync="showMenu">
+  </Navbar>
+
+  <section id="page">
+    <ul class="post-list">
+      <li v-for="item in topics" v-link="{ name: 'topic', params: { id: item.id } }">
+        <div class="avatar">
+          <img :src="item.member.avatar_normal" :alt="item.member.username" />
+        </div>
+        <h3 v-text="item.title"></h3>
+        <div class="info">
+          <span class="node" v-text="item.node.title"></span>
+          <span class="author" v-text="item.member.username"></span>
+        </div>
+      </li>
+    </ul>
+  </section>
+</template>
+
+<script>
+  import $ from 'webpack-zepto';
+
+  export default {
+    data () {
+      return {
+        showMenu: false,
+        topics: [],
+        searchKey: {
+          tab: 'latest'
+        }
+      }
+    },
+    route: {
+      data (transition) {
+        let query = transition.to.query,
+            tab = query.tab || 'latest';
+
+        this.getTopics();
+      }
+    },
+    methods: {
+      getTopics (searchKey) {
+        let params = this.searchKey.tab;
+
+        $.getJSON('./api/' + params + '.json', (data) => {
+          this.topics = data;
+        })
+      }
+    },
+    components: {
+      "Navbar": require('../components/navbar.vue')
+    }
+  }
+</script>
+
+
+<style lang="sass">
+  #page {
+    margin-top: 44px;
+
+    .post-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        height: 88px;
+        padding: 10px 15px;
+        border-bottom: 1px solid #d5dbdb;
+        box-sizing: border-box;
+
+        h3 {
+          margin: 10px 0;
+          font-size: 15px;
+          line-height: 1.5;
+          white-space:nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+
+        .avatar {
+          float: left;
+          padding-top: 10px;
+          padding-right: 15px;
+          vertical-align: middle;
+
+          img {
+            border-radius: 50%;
+          }
+        }
+
+        .info {
+
+          .author {
+            font-size: 13px;
+            margin-left: 10px;
+            color: #888;
+          }
+          .node {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+</style>

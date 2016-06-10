@@ -33,17 +33,18 @@
   #navbar {
     height: 44px;
     width: 100%;
-    border-bottom: 1px solid #e8e8e8;
     position: fixed;
     top: 0;
     left: 0;
     transition: all .3s ease-out;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 4px rgba(#334, 0.5);
+    background: #334;
     z-index: 5;
 
     span {
       display: block;
       font-size: 18px;
+      color: #fefefe;
       text-align: center;
       line-height: 44px;
     }

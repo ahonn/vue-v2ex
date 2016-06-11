@@ -1,7 +1,7 @@
 <template>
   <div class="cover" v-if="showMenu" @click="closeMenu"></div>
   <header id="navbar">
-    <div class="menu" @click="openMenu"> = </div>
+    <div class="menu iconfont icon-menu" @click="openMenu"></div>
     <span v-text="pageType"></span>
   </header>
   <Menu
@@ -44,13 +44,18 @@
     span {
       display: block;
       font-size: 18px;
-      color: #fefefe;
       text-align: center;
       line-height: 44px;
+      color: #fefefe;
     }
 
     .menu {
       float: left;
+      margin: 12px;
+      position: absolute;
+      color: #fff;
+      font-size: 18px;
+      z-index: 10;
     }
   }
 

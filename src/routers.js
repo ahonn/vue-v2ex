@@ -8,6 +8,12 @@ export default function (router) {
         require(['./views/list.vue'], resolve);
       }
     },
+    '/list': {
+      name: 'list',
+      component: function (resolve) {
+        require(['./views/list.vue'], resolve);
+      }
+    },
     '/topic/:id': {
       name: 'topic',
       component: function (resolve) {

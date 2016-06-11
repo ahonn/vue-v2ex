@@ -59,7 +59,6 @@
     li {
       line-height: 1.5;
       padding: 10px 20px;
-      border-bottom: 1px solid #d4d4d4;
 
       &:last-child {
         border-bottom: none;

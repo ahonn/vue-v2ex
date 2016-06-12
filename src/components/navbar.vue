@@ -43,7 +43,7 @@
 
     span {
       display: block;
-      font-size: 18px;
+      font-size: 16px;
       text-align: center;
       line-height: 44px;
       color: #fefefe;

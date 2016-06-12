@@ -1,8 +1,8 @@
 <template>
-  <section id="sidebar" :class="{ 'show': showMenu }">
+  <section id="menu" :class="{ 'show': showMenu }">
     <div class="login"></div>
     <ul class="menu-list">
-      <li class="iconfont icon-all" v-link="{ name: 'list', query: { tab: 'latest' } }">
+      <li class="iconfont icon-all" v-link="{ name: 'home', query: { tab: 'latest' } }">
         <span>全部</span>
       </li>
       <li class="iconfont icon-hot" v-link="{ name: 'list', query: { tab: 'hot' } }">
@@ -28,11 +28,11 @@
 </script>
 
 <style lang="sass">
-  #sidebar {
+  #menu {
     position: fixed;
     top: 0;
     bottom: 0;
-    height: 600px;
+    height: 100%;
     left: -250px;
     width: 250px;
     background: #fff;
@@ -69,6 +69,11 @@
         margin-left: 10px;
         font-size: 16px;
       }
+
+    }
+
+    .v-link-active {
+      background: #d4d4d4;
     }
   }
 </style>

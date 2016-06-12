@@ -1,6 +1,6 @@
 <template>
   <Navbar
-    :page-type="searchKey.tab"
+    :page-type="searchKey.tab | getTitleStr"
     :show-menu.sync="showMenu">
   </Navbar>
 
@@ -35,10 +35,14 @@
     },
     route: {
       data (transition) {
-        let query = transition.to.query,
-            tab = query.tab || 'latest';
+        let query = transition.to.query;
+
+        if (query) {
+          this.searchKey.tab = query.tab || 'latest';
+        }
 
         this.getTopics();
+        this.showMenu = false;
       }
     },
     methods: {

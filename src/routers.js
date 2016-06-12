@@ -17,7 +17,7 @@ export default function (router) {
     '/topic/:id': {
       name: 'topic',
       component: function (resolve) {
-        require(['./views/list.vue'], resolve);
+        require(['./views/topic.vue'], resolve);
       }
     }
   })

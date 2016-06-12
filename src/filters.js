@@ -10,6 +10,15 @@ exports.getTitleStr = tab => {
         case "hot":
             str = "最热";
             break;
+        case "node":
+            str = "节点";
+            break;
+        case "about":
+            str = "关于";
+            break;
+        case "topic":
+            str = "主题";
+            break;
     }
     return str;
 }

@@ -1,6 +1,6 @@
 <template>
   <Navbar
-    :page-type="searchKey.tab | getTitleStr"
+    :page-type="params.tab | getTitleStr"
     :show-menu.sync="showMenu">
   </Navbar>
 
@@ -28,7 +28,7 @@
       return {
         showMenu: false,
         topics: [],
-        searchKey: {
+        params: {
           tab: 'latest'
         }
       }
@@ -38,19 +38,19 @@
         let query = transition.to.query;
 
         if (query) {
-          this.searchKey.tab = query.tab || 'latest';
+          this.params.tab = query.tab || 'latest';
         }
 
-        this.getTopics();
+        this.getTopics(this.params);
         this.showMenu = false;
       }
     },
     methods: {
-      getTopics (searchKey) {
-        let params = this.searchKey.tab;
-
-        $.getJSON('./api/' + params + '.json', (data) => {
-          this.topics = data;
+      getTopics (params) {
+        $.getJSON('./api/' + params.tab + '.json', (data) => {
+          if (data) {
+            this.topics = data;
+          }
         })
       }
     },

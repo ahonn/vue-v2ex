@@ -63,7 +63,7 @@
 
 <style lang="sass">
   #page {
-    margin-top: 44px;
+    padding-top: 44px;
 
     .post-list {
       margin: 0;

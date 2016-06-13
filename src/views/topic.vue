@@ -6,6 +6,14 @@
 
   <section id="page">
     <h2 class="topic-title" v-text="topic.title"></h2>
+    <section class="topic-info">
+      <img :src="topic.member.avatar_normal" />
+      <span class="author" v-text="topic.member.username" ></span>
+      <time> 发布于：2小时前 </time>
+    </section>
+    <section class="topic-content">
+      <span v-text="topic.content"></span>
+    </section>
   </section>
 </template>
 
@@ -45,6 +53,44 @@
 
 <style lang="sass">
   #page {
-    margin-top: 44px;
+    padding-top: 44px;
+
+    .topic-title {
+      margin: 15px;
+      padding: 5px;
+      font-size: 18px;
+      line-height: 1.5;
+      background: #f0f0f0;
+      border-radius: 5px;
+    }
+
+    .topic-info {
+      margin: 15px;
+      font-size: 14px;
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        border-radius: 50%;
+        border: 1px solid #f0f0f0;
+      }
+
+      span {
+        display: inline-block;
+        position: relative;
+        top: -25px;
+      }
+
+      time {
+        position: relative;
+        left: -35px;
+        top: -5px;
+      }
+    }
+
+    .topic-content {
+      margin: 30px 15px;
+    }
   }
 </style>

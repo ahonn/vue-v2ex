@@ -47,7 +47,7 @@
     },
     methods: {
       getTopics (params) {
-        $.getJSON('./api/' + params.tab + '.json', (data) => {
+        $.getJSON('./api/topics/' + params.tab + '.json', (data) => {
           if (data) {
             this.topics = data;
           }

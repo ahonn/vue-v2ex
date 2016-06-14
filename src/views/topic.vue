@@ -8,11 +8,12 @@
     <h2 class="topic-title" v-text="topic.title"></h2>
     <section class="topic-info">
       <img :src="topic.member.avatar_normal" />
-      <span class="author" v-text="topic.member.username" ></span>
-      <time> 发布于：2小时前 </time>
+      <div class="col">
+        <span class="author" v-text="topic.member.username" ></span>
+        <time> 发布于：2小时前 </time>
+      </div>
     </section>
-    <section class="topic-content">
-      <span v-text="topic.content"></span>
+    <section class="topic-content" v-html="topic.content_rendered">
     </section>
   </section>
 </template>
@@ -37,7 +38,7 @@
     },
     methods: {
       getTopics (topicId) {
-        $.getJSON('./api/show.json', (data) => {
+        $.getJSON('./api/topics/show.json', (data) => {
           console.log(data[0]);
           if (data) {
             this.topic = data[0];
@@ -66,7 +67,6 @@
 
     .topic-info {
       margin: 15px;
-      font-size: 14px;
 
       img {
         width: 40px;
@@ -76,21 +76,30 @@
         border: 1px solid #f0f0f0;
       }
 
-      span {
+      .col {
         display: inline-block;
         position: relative;
-        top: -25px;
-      }
-
-      time {
-        position: relative;
-        left: -35px;
         top: -5px;
+
+        span {
+          display: block;
+          width: 100%;
+          padding-bottom: 5px;
+        }
+
+        time {
+          font-size: 14px;
+          padding-top: 5px;
+        }
       }
     }
 
     .topic-content {
       margin: 30px 15px;
+
+      img {
+        width: 100%;
+      }
     }
   }
 </style>

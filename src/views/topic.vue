@@ -19,8 +19,6 @@
 </template>
 
 <script>
-  import $ from 'webpack-zepto';
-
   export default {
     data () {
       return {
@@ -32,18 +30,19 @@
       data (transition) {
         let topicId = transition.to.params.id;
 
-        this.getTopics(topicId);
+        this.getTopic(topicId);
         this.showMenu = false;
       }
     },
     methods: {
-      getTopics (topicId) {
-        $.getJSON('./api/topics/show.json', (data) => {
-          console.log(data[0]);
-          if (data) {
-            this.topic = data[0];
+      getTopic (topicId) {
+        let url = './api/topics/show.json';
+
+        this.$http.get(url).then(function (response) {
+          if (response.data) {
+            this.topic = response.data[0];
           }
-        })
+        });
       }
     },
     components: {

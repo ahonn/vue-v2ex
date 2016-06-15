@@ -21,8 +21,6 @@
 </template>
 
 <script>
-  import $ from 'webpack-zepto';
-
   export default {
     data () {
       return {
@@ -47,11 +45,14 @@
     },
     methods: {
       getTopics (params) {
-        $.getJSON('./api/topics/' + params.tab + '.json', (data) => {
-          if (data) {
-            this.topics = data;
-          }
-        })
+        let url = './api/topics/' + params.tab + '.json'
+
+        this.$http.get(url)
+          .then(function (response) {
+            if (response.data) {
+              this.topics = response.data;
+            }
+          });
       }
     },
     components: {

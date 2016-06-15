@@ -2,15 +2,14 @@
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import VueResource from 'vue-resource';
 import filters from './filters';
 import routerMap from './routers';
-import $ from 'webpack-zepto';
 
 Vue.use(VueRouter);
+Vue.use(VueResource);
 
 Object.keys(filters).forEach(k => Vue.filter(k, filters[k]));
-
-$.ajaxSettings.crossDomain = true;
 
 let router = new VueRouter();
 

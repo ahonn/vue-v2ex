@@ -10,7 +10,7 @@ exports.getTitleStr = tab => {
         case "hot":
             str = "最热";
             break;
-        case "node":
+        case "nodes":
             str = "节点";
             break;
         case "about":

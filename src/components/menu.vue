@@ -8,7 +8,7 @@
       <li class="iconfont icon-hot" v-link="{ name: 'list', query: { tab: 'hot' } }">
         <span>最热</span>
       </li>
-      <li class="iconfont icon-node" >
+      <li class="iconfont icon-node" v-link=" { name: 'nodes' } ">
         <span>节点</span>
       </li>
       <li class="iconfont icon-about">
@@ -45,7 +45,7 @@
   }
 
   .login {
-    height: 120px;
+    height: 25%;
     background: #334;
   }
 

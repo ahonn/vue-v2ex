@@ -47,12 +47,11 @@
       getTopics (params) {
         let url = './api/topics/' + params.tab + '.json'
 
-        this.$http.get(url)
-          .then(function (response) {
-            if (response.data) {
-              this.topics = response.data;
-            }
-          });
+        this.$http.get(url).then(function (response) {
+          if (response.data) {
+            this.topics = response.data;
+          }
+        });
       }
     },
     components: {

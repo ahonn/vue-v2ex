@@ -5,8 +5,11 @@
   </Navbar>
 
   <section id="page">
+    <div class="search">
+      <input type="text" class="input-text" v-model="nodetitle" placeholder="搜索节点">
+    </div>
     <div class="nodes">
-      <a v-for="node in nodes" class="node-item" v-link="{ name: 'node', params: { id: node.id } }">
+      <a v-for="node in nodes | filterBy nodetitle in 'title'" class="node-item" v-link="{ name: 'node', params: { id: node.id } }">
         <span v-text="node.title"></span>
       </a>
     </div>
@@ -18,7 +21,8 @@
     data () {
       return {
         showMenu: false,
-        nodes: {}
+        nodes: {},
+        nodetitle:''
       }
     },
     route: {
@@ -46,6 +50,20 @@
 <style lang='sass'>
   #page {
     padding-top: 44px;
+
+    .search {
+      padding: 15px;
+
+      .input-text {
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+    }
 
     .nodes {
       padding: 15px;

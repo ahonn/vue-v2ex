@@ -19,6 +19,8 @@ exports.getTitleStr = tab => {
         case "topic":
             str = "主题";
             break;
+        default:
+            str = tab;
     }
     return str;
 }

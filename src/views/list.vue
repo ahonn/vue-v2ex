@@ -1,6 +1,6 @@
 <template>
   <Navbar
-    :page-type="params.tab | getTitleStr"
+    :page-type="pageType | getTitleStr"
     :show-menu.sync="showMenu">
   </Navbar>
 
@@ -28,7 +28,8 @@
         topics: [],
         params: {
           tab: 'latest'
-        }
+        },
+        pageType: ""
       }
     },
     route: {
@@ -37,7 +38,14 @@
 
         if (query) {
           this.params.tab = query.tab || 'latest';
+
+          if (query.name) {
+            this.pageType = query.name;
+          } else {
+            this.pageType = query.tab;
+          }
         }
+        console.log(query.name);
 
         this.getTopics(this.params);
         this.showMenu = false;

@@ -29,7 +29,7 @@ export default function (router) {
     '/node/:id': {
       name: 'node',
       component: function (resolve) {
-        require(['./views/nodes.vue'], resolve);
+        require(['./views/list.vue'], resolve);
       }
     }
   })

@@ -9,7 +9,7 @@
       <input type="text" class="input-text" v-model="nodetitle" placeholder="搜索节点">
     </div>
     <div class="nodes">
-      <a v-for="node in nodes | filterBy nodetitle in 'title'" class="node-item" v-link="{ name: 'node', params: { id: node.id } }">
+      <a v-for="node in nodes | filterBy nodetitle in 'title'" class="node-item" v-link="{ name: 'node', params: { id: node.id }, query: { tab: node.name, name: node.title } }">
         <span v-text="node.title"></span>
       </a>
     </div>

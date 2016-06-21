@@ -36,7 +36,7 @@
     },
     methods: {
       getTopic (topicId) {
-        let url = './api/topics/show.json';
+        let url = './api/topics/' + topicId;
 
         this.$http.get(url).then(function (response) {
           if (response.data) {

@@ -1,6 +1,6 @@
 <template>
   <Navbar
-    :page-type="pageType | getTitleStr"
+    :page-type="params.tab | getTitleStr"
     :show-menu.sync="showMenu">
   </Navbar>
 
@@ -38,23 +38,21 @@
 
         if (query) {
           this.params.tab = query.tab || 'latest';
-
-          if (query.name) {
-            this.pageType = query.name;
-          } else {
-            this.pageType = query.tab;
-          }
         }
-        console.log(query.name);
 
-        this.getTopics(this.params);
+        if (query.type == 'node') {
+          var url = './api/nodes/' + transition.to.params.id;
+        } else {
+          var url = './api/topics/' + this.params.tab;
+        }
+
+        console.log(url);
+        this.getTopics(url);
         this.showMenu = false;
       }
     },
     methods: {
-      getTopics (params) {
-        let url = './api/topics/' + params.tab + '.json'
-
+      getTopics (url) {
         this.$http.get(url).then(function (response) {
           if (response.data) {
             this.topics = response.data;

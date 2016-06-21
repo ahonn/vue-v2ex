@@ -2,10 +2,10 @@
   <section id="menu" :class="{ 'show': showMenu }">
     <div class="login"></div>
     <ul class="menu-list">
-      <li class="iconfont icon-all" v-link="{ name: 'home', query: { tab: 'latest' } }">
+      <li class="iconfont icon-all" v-link="{ name: 'home', query: { name: 'all', tab: 'latest' } }">
         <span>全部</span>
       </li>
-      <li class="iconfont icon-hot" v-link="{ name: 'list', query: { tab: 'hot' } }">
+      <li class="iconfont icon-hot" v-link="{ name: 'list', query: { name: 'hot', tab: 'hot' } }">
         <span>最热</span>
       </li>
       <li class="iconfont icon-node" v-link=" { name: 'nodes' } ">

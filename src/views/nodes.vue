@@ -9,7 +9,7 @@
       <input type="text" class="input-text" v-model="nodetitle" placeholder="搜索节点">
     </div>
     <div class="nodes">
-      <a v-for="node in nodes | filterBy nodetitle in 'title'" class="node-item" v-link="{ name: 'node', params: { id: node.id }, query: { tab: node.name, name: node.title } }">
+      <a v-for="node in nodes | filterBy nodetitle in 'title'" class="node-item" v-link="{ name: 'node', params: { id: node.id }, query: { type: 'node', tab: node.title } }">
         <span v-text="node.title"></span>
       </a>
     </div>
@@ -33,7 +33,7 @@
     },
     methods: {
       getNodes () {
-        let url = './api/nodes/all.json';
+        let url = './api/nodes/all';
         this.$http.get(url).then(function (response) {
           if (response.data) {
             this.nodes = response.data;

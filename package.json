@@ -9,10 +9,12 @@
   },
   "dependencies": {
     "babel-runtime": "^6.0.0",
+    "express": "^4.14.0",
+    "moment": "^2.13.0",
+    "superagent": "^2.0.0",
     "vue": "^1.0.0",
     "vue-resource": "^0.7.4",
-    "vue-router": "^0.7.13",
-    "webpack-zepto": "0.0.1"
+    "vue-router": "^0.7.13"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

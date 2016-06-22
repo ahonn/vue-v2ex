@@ -10,10 +10,17 @@
         <div class="avatar">
           <img :src="item.member.avatar_normal" :alt="item.member.username" />
         </div>
-        <h3 v-text="item.title"></h3>
-        <div class="info">
-          <span class="node" v-text="item.node.title"></span>
-          <span class="author" v-text="item.member.username"></span>
+        <div class="content">
+          <h3 v-text="item.title"></h3>
+          <div class="info">
+            <span class="node" v-text="item.node.title"
+              v-link="{ name: 'node', params: { id: item.node.id }, query: { type: 'node', tab: item.node.title } }"></span>
+            <span class="author" v-text="item.member.username"></span>
+            <span class="created" v-text="item.created | getTimeStr true"></span>
+          </div>
+        </div>
+        <div class="replies">
+          <span v-text="item.replies"></span>
         </div>
       </li>
     </ul>
@@ -28,8 +35,7 @@
         topics: [],
         params: {
           tab: 'latest'
-        },
-        pageType: ""
+        }
       }
     },
     route: {
@@ -46,7 +52,6 @@
           var url = './api/topics/' + this.params.tab;
         }
 
-        console.log(url);
         this.getTopics(url);
         this.showMenu = false;
       }
@@ -82,15 +87,6 @@
         border-bottom: 1px solid #d5dbdb;
         box-sizing: border-box;
 
-        h3 {
-          margin: 10px 0;
-          font-size: 15px;
-          line-height: 1.5;
-          white-space:nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-        }
-
         .avatar {
           float: left;
           padding-top: 10px;
@@ -102,15 +98,53 @@
           }
         }
 
-        .info {
+        .content {
+          position: absolute;
+          left: 75px;
+          right: 60px;
 
-          .author {
-            font-size: 13px;
-            margin-left: 10px;
-            color: #888;
+          h3 {
+            margin: 10px 0;
+            font-size: 15px;
+            line-height: 1.5;
+            white-space:nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
           }
-          .node {
+
+          .info {
+            color: #888;
             font-size: 12px;
+
+            .author {
+              font-size: 13px;
+            }
+
+            & ::after {
+              content: "-";
+              margin-left: 3px;
+            }
+
+            .created {
+              &::after {
+                content: "";
+              }
+            }
+          }
+        }
+
+        .replies {
+          float: right;
+          width: 30px;
+
+          span {
+            display: block;
+            margin: 25px 0;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            background: #ddd;
+            border-radius: 8px;
           }
         }
       }

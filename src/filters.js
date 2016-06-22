@@ -1,6 +1,7 @@
-/** 获取title文字
- *  @param {string} tab Tab分类
- */
+"use strict"
+
+import Moment from 'moment';
+
 exports.getTitleStr = tab => {
     let str = "";
     switch (tab) {
@@ -23,4 +24,14 @@ exports.getTitleStr = tab => {
             str = tab;
     }
     return str;
+}
+
+exports.getTimeStr = (time, fromNow) => {
+    Moment.locale('zh-cn');
+
+    if (fromNow) {
+        return Moment.unix(time).fromNow();
+    } else {
+        return utils.fmtDate(new Date(time),'yyyy-MM-dd hh:mm');
+    }
 }

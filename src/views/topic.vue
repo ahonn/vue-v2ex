@@ -10,7 +10,7 @@
       <img :src="topic.member.avatar_normal" />
       <div class="col">
         <span class="author" v-text="topic.member.username" ></span>
-        <time> 发布于：2小时前 </time>
+        <time> 发布于：{{ topic.created | getTimeStr true }}</time>
       </div>
     </section>
     <section class="topic-content" v-html="topic.content_rendered">
@@ -87,7 +87,7 @@
         }
 
         time {
-          font-size: 14px;
+          font-size: 13px;
           padding-top: 5px;
         }
       }

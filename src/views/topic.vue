@@ -156,7 +156,7 @@
         }
 
         .reply-content {
-          margin-top: 5px;
+          margin-top: 6px;
           word-break: break-all;
           word-wrap: break-woed;
         }

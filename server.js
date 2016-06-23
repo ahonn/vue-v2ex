@@ -4,6 +4,15 @@ var app = express();
 
 app.use(express.static('.'));
 
+function getData(res, url) {
+  var sreq = superagent.get(url);
+
+  sreq.pipe(res);
+  sreq.on('end', function(){
+      console.log('Done => ' + url);
+  });
+}
+
 app.get('/api/topics/:id', function (req, res) {
     var id = req.params.id;
 
@@ -12,12 +21,8 @@ app.get('/api/topics/:id', function (req, res) {
     } else {
       var url = 'http://v2ex.com/api/topics/show.json?id='+ id
     }
-    var sreq = superagent.get(url);
 
-    sreq.pipe(res);
-    sreq.on('end', function(){
-        console.log('Done, id: ' + id);
-    });
+    getData(res, url);
 });
 
 app.get('/api/nodes/:id', function (req, res) {
@@ -28,12 +33,15 @@ app.get('/api/nodes/:id', function (req, res) {
     } else {
       var url = 'http://v2ex.com/api/topics/show.json?node_id='+ id
     }
-    var sreq = superagent.get(url);
 
-    sreq.pipe(res);
-    sreq.on('end', function(){
-        console.log('Done, id: ' + id);
-    });
+    getData(res, url);
+});
+
+app.get('/api/replies/:id', function (req, res) {
+    var id = req.params.id;
+    var url = 'http://v2ex.com/api/replies/show.json?topic_id='+ id
+
+    getData(res, url);
 });
 
 app.listen(80);

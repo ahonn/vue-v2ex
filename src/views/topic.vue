@@ -7,7 +7,7 @@
   <section id="page">
     <h2 class="topic-title" v-text="topic.title"></h2>
     <section class="topic-info">
-      <img :src="topic.member.avatar_normal" />
+      <img class="avatar" :src="topic.member.avatar_normal" />
       <div class="col">
         <span class="author" v-text="topic.member.username" ></span>
         <time>发布于：{{ topic.created | getTimeStr true }}</time>
@@ -18,7 +18,7 @@
     <section class="replies">
       <ul class="replies_list">
         <li v-for="reply in replies" class="reply">
-          <img :src="reply.member.avatar_mini" />
+          <img class="avatar" :src="reply.member.avatar_mini" />
           <div class="col">
             <span class="username" v-text="reply.member.username"></span>
             <time v-text="reply.created | getTimeStr true"></time>
@@ -88,7 +88,7 @@
     .topic-info {
       margin: 15px;
 
-      img {
+      .avatar {
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -135,7 +135,7 @@
         padding: 15px;
         border-top: 1px solid #ddd;
 
-        img {
+        .avatar {
           width: 20px;
           height: 20px;
           border-radius: 50%;

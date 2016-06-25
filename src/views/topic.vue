@@ -161,7 +161,7 @@
           word-wrap: break-woed;
 
           img {
-            width: 100%;
+            max-width: 100%;
           }
         }
       }

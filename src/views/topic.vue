@@ -18,10 +18,11 @@
     <section class="replies">
       <ul class="replies_list">
         <li v-for="reply in replies" class="reply">
-          <img class="avatar" :src="reply.member.avatar_mini" />
-          <div class="col">
+          <div class="reply-info">
+            <img class="avatar" :src="reply.member.avatar_mini" />
             <span class="username" v-text="reply.member.username"></span>
-            <time v-text="reply.created | getTimeStr true"></time>
+            <span class="time" v-text="reply.created | getTimeStr true"></span>
+            <span class="floor" v-text="$index + 1"></span>
           </div>
           <div class="reply-content" v-html="reply.content_rendered">
           </div>
@@ -118,7 +119,7 @@
       margin: 30px 15px;
 
       img {
-        width: 100%;
+        max-width: 100%;
       }
 
       code {
@@ -135,23 +136,39 @@
         padding: 15px;
         border-top: 1px solid #ddd;
 
-        .avatar {
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          border: 1px solid #f0f0f0;
-        }
-
-        .col {
+        .reply-info {
+          width: 100%;
           display: inline-block;
-          margin-left: 5px;
           position: relative;
-          top: -5px;
 
-          time {
+          .avatar {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid #f0f0f0;
+          }
+
+          .username, .time {
             margin-left: 5px;
+            position: relative;
+            top: -5px;
+          }
+
+          .time {
             color: #bbb;
             font-size: 12px;
+          }
+
+          .floor {
+            position: absolute;
+            right: 0px;
+            top: 5px;
+            color: #bbb;
+
+            &::before {
+              content: "#";
+              margin-right: 3px;
+            }
           }
         }
 

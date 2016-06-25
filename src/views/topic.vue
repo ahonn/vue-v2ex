@@ -159,6 +159,10 @@
           margin-top: 5px;
           word-break: break-all;
           word-wrap: break-woed;
+
+          img {
+            width: 100%;
+          }
         }
       }
     }

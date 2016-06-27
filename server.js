@@ -44,5 +44,12 @@ app.get('/api/replies/:id', function (req, res) {
     getData(res, url);
 });
 
+app.get('/api/members/:username', function (req, res) {
+    var id = req.params.id;
+    var url = 'http://v2ex.com/api/members/show.json?username='+ username
+
+    getData(res, url);
+});
+
 app.listen(80);
 console.log('Express started on 127.0.0.1:80');

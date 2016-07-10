@@ -41,12 +41,23 @@
   .weui_tabbar {
     position: fixed;
   }
+  
+  .weui_tabbar_label {
+    margin-bottom: 5px;
+    font-size: 10px;
+  }
 
   .weui_tabbar_item {
     text-decoration: none;
   }
 
   .weui_tabbar_item.weui_bar_item_on .weui_tabbar_label {
+    font-size: 600;
     color: #334;
+  }
+
+  .weui_tabbar_icon {
+    width: 18px;
+    height: 18px;
   }
 </style>

@@ -30,7 +30,7 @@
 
 <style lang="less"> 
   .topics {
-    margin: 0px 15px 65px;
+    margin: 0px 15px 48px;
 
     .topic-item {
       padding: 15px 0px;

@@ -1,0 +1,71 @@
+[
+    
+    {
+        "id" : 3299934,
+        "thanks" : 0,
+        "content" : "add \u0022DOWNLOAD_HANDLERS \u003D {\u0027s3\u0027: None, }\u0022 to settings.py",
+        "content_rendered" : "add \u0026quot\u003BDOWNLOAD_HANDLERS \u003D {\u0027s3\u0027: None, }\u0026quot\u003B to settings.py",
+        "member" : {
+            "id" : 41398,
+            "username" : "laozhao0",
+            "tagline" : "None",
+            "avatar_mini" : "//cdn.v2ex.co/gravatar/970f2ee3b5ed0a8a352789c5d5bd7d06?s=24&d=retro",
+            "avatar_normal" : "//cdn.v2ex.co/gravatar/970f2ee3b5ed0a8a352789c5d5bd7d06?s=48&d=retro",
+            "avatar_large" : "//cdn.v2ex.co/gravatar/970f2ee3b5ed0a8a352789c5d5bd7d06?s=73&d=retro"
+        },
+        "created" : 1466580448,
+        "last_modified" : 1466580448
+    },
+    
+    {
+        "id" : 3300036,
+        "thanks" : 0,
+        "content" : "记得加上请求头，还有一些其它的参数都要填全",
+        "content_rendered" : "记得加上请求头，还有一些其它的参数都要填全",
+        "member" : {
+            "id" : 174870,
+            "username" : "brucedone",
+            "tagline" : "None",
+            "avatar_mini" : "//cdn.v2ex.co/gravatar/e5447d70b87afa1cf4056ae557178923?s=24&d=retro",
+            "avatar_normal" : "//cdn.v2ex.co/gravatar/e5447d70b87afa1cf4056ae557178923?s=48&d=retro",
+            "avatar_large" : "//cdn.v2ex.co/gravatar/e5447d70b87afa1cf4056ae557178923?s=73&d=retro"
+        },
+        "created" : 1466582296,
+        "last_modified" : 1466582296
+    },
+    
+    {
+        "id" : 3300078,
+        "thanks" : 0,
+        "content" : "@laozhao0 \u000D\u000A@brucedone \u000D\u000A请求头已加入。\u000D\u000A\u000D\u000A  File \u0022/home/cashew/Codes/douban_book/douban_book/spiders/dbbook.py\u0022, line 37, in parse\u000D\u000A    item[\u0027bookesInfo\u0027] \u003D booksInfo\u000D\u000A  File \u0022/usr/lib/python2.7/dist\u002Dpackages/scrapy/item.py\u0022, line 63, in __setitem__\u000D\u000A    (self.__class__.__name__, key))\u000D\u000AKeyError: \u0027DoubanBookItem does not support field: bookesInfo\u0027\u000D\u000A\u000D\u000A又报错了。",
+        "content_rendered" : "@\u003Ca target\u003D\u0022_blank\u0022 href\u003D\u0022/member/laozhao0\u0022\u003Elaozhao0\u003C/a\u003E \u000D\u003Cbr /\u003E@\u003Ca target\u003D\u0022_blank\u0022 href\u003D\u0022/member/brucedone\u0022\u003Ebrucedone\u003C/a\u003E \u000D\u003Cbr /\u003E请求头已加入。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E  File \u0026quot\u003B/home/cashew/Codes/douban_book/douban_book/spiders/dbbook.py\u0026quot\u003B, line 37, in parse\u000D\u003Cbr /\u003E    item[\u0027bookesInfo\u0027] \u003D booksInfo\u000D\u003Cbr /\u003E  File \u0026quot\u003B/usr/lib/python2.7/dist\u002Dpackages/scrapy/item.py\u0026quot\u003B, line 63, in __setitem__\u000D\u003Cbr /\u003E    (self.__class__.__name__, key))\u000D\u003Cbr /\u003EKeyError: \u0027DoubanBookItem does not support field: bookesInfo\u0027\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E又报错了。",
+        "member" : {
+            "id" : 176336,
+            "username" : "cashew",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/4e71/23db/176336_mini.png?m=1465268476",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/4e71/23db/176336_normal.png?m=1465268476",
+            "avatar_large" : "//cdn.v2ex.co/avatar/4e71/23db/176336_large.png?m=1465268476"
+        },
+        "created" : 1466583145,
+        "last_modified" : 1466583145
+    },
+    
+    {
+        "id" : 3300264,
+        "thanks" : 0,
+        "content" : "你的 DoubanBookItem 里没有 bookesInfo 字段，但是在 spider 里写了 item[\u0027bookesInfo\u0027] \u003D \u0027xxx\u0027 ?",
+        "content_rendered" : "你的 DoubanBookItem 里没有 bookesInfo 字段，但是在 spider 里写了 item[\u0027bookesInfo\u0027] \u003D \u0027xxx\u0027 ?",
+        "member" : {
+            "id" : 41398,
+            "username" : "laozhao0",
+            "tagline" : "None",
+            "avatar_mini" : "//cdn.v2ex.co/gravatar/970f2ee3b5ed0a8a352789c5d5bd7d06?s=24&d=retro",
+            "avatar_normal" : "//cdn.v2ex.co/gravatar/970f2ee3b5ed0a8a352789c5d5bd7d06?s=48&d=retro",
+            "avatar_large" : "//cdn.v2ex.co/gravatar/970f2ee3b5ed0a8a352789c5d5bd7d06?s=73&d=retro"
+        },
+        "created" : 1466585751,
+        "last_modified" : 1466585751
+    }
+    
+]

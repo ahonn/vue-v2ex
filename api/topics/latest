@@ -1,0 +1,530 @@
+[
+    
+    {
+        "id" : 287559,
+        "title" : "新手用 Scrapy 写爬虫时，一直提示 URLError: \u003Curlopen error timed out\u003E求大神指导",
+        "url" : "http://www.v2ex.com/t/287559",
+        "content" : "```\u000D\u000AURLError: \u003Curlopen error timed out\u003E\u000D\u000A\u000D\u000A[boto] ERROR: Unable to read instance data, giving up\u000D\u000A```\u000D\u000A\u000D\u000A爬取的是豆瓣图书 Top250 （ https://book.douban.com/top250 ） 一直提示超时。\u000D\u000A\u000D\u000A但是爬取豆瓣 9 分书单（ https://www.douban.com/doulist/1264675/ ） 时就不会有问题。\u000D\u000A\u000D\u000A两个页面的结构基本一样，代码只是稍微不同，大致是一样的。\u000D\u000A\u000D\u000A但是在爬取时， Top250 的那个就一直报错， 9 分书单的那个可以正常爬取完成。\u000D\u000A\u000D\u000A```\u000D\u000Aimport scrapy\u000D\u000Afrom scrapy.contrib.spiders import CrawlSpider\u000D\u000Afrom scrapy.http import Request\u000D\u000Afrom scrapy.selector import Selector\u000D\u000Afrom douban_book.items import DoubanBookItem\u000D\u000A\u000D\u000Aclass Douban(scrapy.Spider):\u000D\u000A    name \u003D \u0022dbbook\u0022\u000D\u000A    start_urls \u003D (\u000D\u000A        \u0027https://book.douban.com/top250\u0027\u000D\u000A    )\u000D\u000A```",
+        "content_rendered" : "\u003Cpre\u003E\u003Ccode\u003EURLError: \u0026lt\u003Burlopen error timed out\u0026gt\u003B\u000A\u000A[boto] ERROR: Unable to read instance data, giving up\u000A\u003C/code\u003E\u003C/pre\u003E\u000A\u003Cp\u003E爬取的是豆瓣图书 Top250 （ \u003Ca href\u003D\u0022https://book.douban.com/top250\u0022 rel\u003D\u0022nofollow\u0022\u003Ehttps://book.douban.com/top250\u003C/a\u003E ） 一直提示超时。\u003C/p\u003E\u000A\u003Cp\u003E但是爬取豆瓣 9 分书单（ \u003Ca href\u003D\u0022https://www.douban.com/doulist/1264675/\u0022 rel\u003D\u0022nofollow\u0022\u003Ehttps://www.douban.com/doulist/1264675/\u003C/a\u003E ） 时就不会有问题。\u003C/p\u003E\u000A\u003Cp\u003E两个页面的结构基本一样，代码只是稍微不同，大致是一样的。\u003C/p\u003E\u000A\u003Cp\u003E但是在爬取时， Top250 的那个就一直报错， 9 分书单的那个可以正常爬取完成。\u003C/p\u003E\u000A\u003Cpre\u003E\u003Ccode\u003Eimport scrapy\u000Afrom scrapy.contrib.spiders import CrawlSpider\u000Afrom scrapy.http import Request\u000Afrom scrapy.selector import Selector\u000Afrom douban_book.items import DoubanBookItem\u000A\u000Aclass Douban(scrapy.Spider):\u000A    name \u003D \u0022dbbook\u0022\u000A    start_urls \u003D (\u000A        \u0027https://book.douban.com/top250\u0027\u000A    )\u000A\u003C/code\u003E\u003C/pre\u003E\u000A",
+        "replies" : 0,
+        "member" : {
+            "id" : 176336,
+            "username" : "cashew",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/4e71/23db/176336_mini.png?m=1465268476",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/4e71/23db/176336_normal.png?m=1465268476",
+            "avatar_large" : "//cdn.v2ex.co/avatar/4e71/23db/176336_large.png?m=1465268476"
+        },
+        "node" : {
+            "id" : 90,
+            "name" : "python",
+            "title" : "Python",
+            "title_alternative" : "Python",
+            "url" : "http://www.v2ex.com/go/python",
+            "topics" : 5095,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/8613/985e/90_mini.png?m=1466392872",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/8613/985e/90_normal.png?m=1466392872",
+            "avatar_large" : "//cdn.v2ex.co/navatar/8613/985e/90_large.png?m=1466392872"
+        },
+        "created" : 1466578747,
+        "last_modified" : 1466578747,
+        "last_touched" : 1466564347
+    },
+    
+    {
+        "id" : 287557,
+        "title" : "推荐一些纯 React Native 的应用， Android 和 iOS 的都可以。",
+        "url" : "http://www.v2ex.com/t/287557",
+        "content" : "我知道 QQ 空间的情侣空间是用 React Native 写的，淘宝 Android 里也用了 React Native ，但不知道是全部还是部分功能页面，大家帮我推荐些纯 React Native 开发应用，我想想看看和原生应用体检上的差别。",
+        "content_rendered" : "\u003Cp\u003E我知道 QQ 空间的情侣空间是用 React Native 写的，淘宝 Android 里也用了 React Native ，但不知道是全部还是部分功能页面，大家帮我推荐些纯 React Native 开发应用，我想想看看和原生应用体检上的差别。\u003C/p\u003E\u000A",
+        "replies" : 0,
+        "member" : {
+            "id" : 81317,
+            "username" : "korvin",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/099e/54d3/81317_mini.png?m=1426349388",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/099e/54d3/81317_normal.png?m=1426349388",
+            "avatar_large" : "//cdn.v2ex.co/avatar/099e/54d3/81317_large.png?m=1426349388"
+        },
+        "node" : {
+            "id" : 12,
+            "name" : "qna",
+            "title" : "问与答",
+            "title_alternative" : "Questions and Answers",
+            "url" : "http://www.v2ex.com/go/qna",
+            "topics" : 71484,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_mini.png?m=1466294049",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_normal.png?m=1466294049",
+            "avatar_large" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_large.png?m=1466294049"
+        },
+        "created" : 1466578629,
+        "last_modified" : 1466578629,
+        "last_touched" : 1466578449
+    },
+    
+    {
+        "id" : 287556,
+        "title" : "百度云加速的 520 错误",
+        "url" : "http://www.v2ex.com/t/287556",
+        "content" : "论坛里边搜索，得到的是这个答案，帮助支持里边搜索不到答案\u000D\u000A\u000D\u000A\u000D\u000A\u000D\u000AQ5 ：为什么访问会报 520 错误页面？我该如何解决？\u000D\u000AA ： 520 错误页面主要是可能发生了以下几种情况：\u000D\u000A1 、  在 TCP 协议握手时，连接被重置。针对这个现象，首先需要跟网络和主机服务提供商确认在服务器 /机房是否存在软硬件防火墙设备，假如有，需要在防火墙上将我们的 IP 网段添加进防火墙白名单，节点网段可以在云加速用户平台进行查询。\u000D\u000A2 、  源站当前的 http 头配置超过了云加速限制的大小。\u000D\u000A3 、  源站当前的响应为空。\u000D\u000A4 、  源站当前 HTTP 是无效的。\u000D\u000A第 2 、 3 、 4 项请直接访问访问源站，对请求头进行检查。\u000D\u000A\u000D\u000A\u000D\u000A\u000D\u000A太失望了，百度竟然给出的是这种答案， http 头有问题，倒是给出标准来呀。打算换到国外的 cloudflare ，这个是百度的合作伙伴，不会也一个德性吧",
+        "content_rendered" : "论坛里边搜索，得到的是这个答案，帮助支持里边搜索不到答案\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003EQ5 ：为什么访问会报 520 错误页面？我该如何解决？\u000D\u003Cbr /\u003EA ： 520 错误页面主要是可能发生了以下几种情况：\u000D\u003Cbr /\u003E1 、  在 TCP 协议握手时，连接被重置。针对这个现象，首先需要跟网络和主机服务提供商确认在服务器 /机房是否存在软硬件防火墙设备，假如有，需要在防火墙上将我们的 IP 网段添加进防火墙白名单，节点网段可以在云加速用户平台进行查询。\u000D\u003Cbr /\u003E2 、  源站当前的 http 头配置超过了云加速限制的大小。\u000D\u003Cbr /\u003E3 、  源站当前的响应为空。\u000D\u003Cbr /\u003E4 、  源站当前 HTTP 是无效的。\u000D\u003Cbr /\u003E第 2 、 3 、 4 项请直接访问访问源站，对请求头进行检查。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E太失望了，百度竟然给出的是这种答案， http 头有问题，倒是给出标准来呀。打算换到国外的 cloudflare ，这个是百度的合作伙伴，不会也一个德性吧",
+        "replies" : 0,
+        "member" : {
+            "id" : 74729,
+            "username" : "chaegumi",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/20c7/a5e0/74729_mini.png?m=1442047624",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/20c7/a5e0/74729_normal.png?m=1442047624",
+            "avatar_large" : "//cdn.v2ex.co/avatar/20c7/a5e0/74729_large.png?m=1442047624"
+        },
+        "node" : {
+            "id" : 300,
+            "name" : "programmer",
+            "title" : "程序员",
+            "title_alternative" : "Programmer",
+            "url" : "http://www.v2ex.com/go/programmer",
+            "topics" : 12290,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/94f6/d7e0/300_mini.png?m=1466403080",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/94f6/d7e0/300_normal.png?m=1466403080",
+            "avatar_large" : "//cdn.v2ex.co/navatar/94f6/d7e0/300_large.png?m=1466403080"
+        },
+        "created" : 1466578535,
+        "last_modified" : 1466578535,
+        "last_touched" : 1466578355
+    },
+    
+    {
+        "id" : 287555,
+        "title" : "python 脚本定期执行，无法实现 usermod \u002Dp 功能",
+        "url" : "http://www.v2ex.com/t/287555",
+        "content" : "写了一个 python 脚本，用于定时修改 linux 系统用户密码，用到的命令是\u000D\u000Asubprocess.call(\u0027usermod \u002Dp \u0027 + ftppass2 + \u0027 \u0027 + username,shell\u003DTrue)\u000D\u000A\u000D\u000A现在的问题是：通过 crontab 脚本执行时，这句不起作用；但是手动执行脚本却可以。\u000D\u000A\u000D\u000A定时任务： 29 02 * * * python /root/api/ftp.py \u003E/dev/null 2\u003E\u00261",
+        "content_rendered" : "写了一个 python 脚本，用于定时修改 linux 系统用户密码，用到的命令是\u000D\u003Cbr /\u003Esubprocess.call(\u0027usermod \u002Dp \u0027 + ftppass2 + \u0027 \u0027 + username,shell\u003DTrue)\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E现在的问题是：通过 crontab 脚本执行时，这句不起作用；但是手动执行脚本却可以。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E定时任务： 29 02 * * * python /root/api/ftp.py \u0026gt\u003B/dev/null 2\u0026gt\u003B\u0026amp\u003B1",
+        "replies" : 2,
+        "member" : {
+            "id" : 12396,
+            "username" : "csensix",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/b1f6/c0ad/12396_mini.png?m=1455859556",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/b1f6/c0ad/12396_normal.png?m=1455859556",
+            "avatar_large" : "//cdn.v2ex.co/avatar/b1f6/c0ad/12396_large.png?m=1455859556"
+        },
+        "node" : {
+            "id" : 12,
+            "name" : "qna",
+            "title" : "问与答",
+            "title_alternative" : "Questions and Answers",
+            "url" : "http://www.v2ex.com/go/qna",
+            "topics" : 71484,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_mini.png?m=1466294049",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_normal.png?m=1466294049",
+            "avatar_large" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_large.png?m=1466294049"
+        },
+        "created" : 1466578356,
+        "last_modified" : 1466578356,
+        "last_touched" : 1466578750
+    },
+    
+    {
+        "id" : 287554,
+        "title" : "[厦门] 旅游电商『欣欣旅游』招聘 Android、前端工程师",
+        "url" : "http://www.v2ex.com/t/287554",
+        "content" : "\u002D 公司：厦门`欣欣旅游`  www.cncn.com \u0026 www.cncn.net\u000D\u000A\u002D 坐标：厦门软件园二期望海路 2 号\u000D\u000A\u002D 融资情况：[2016.06 B 轮融资]( http://www.traveldaily.cn/article/104467)\u000D\u000A\u002D 行业：旅游电商\u000D\u000A\u002D 要求：\u000D\u000A    1. 对技术热忱，有好奇心，有协同做好一个产品的热情；\u000D\u000A    2. 做事尽责，我们期望能主动承担，在未来有成长空间的你；\u000D\u000A    3. 良好的学习能力，主动了解行业前沿技术并尝试应用；\u000D\u000A\u000D\u000A\u002D 岗位职责：\u000D\u000A\u000D\u000A\u000D\u000A    `Android 开发工程师`\u000D\u000A    \u000D\u000A    负责平台事业部下两款 App 的开发迭代\u000D\u000A    \u000D\u000A    1. 旅游顾问 App ：面向游客，目前主要包括顾问、机票、酒店、门票、传统线路、定制游、在线客服等模块\u000D\u000A    2. 同业助手 App ：面向旅行社及旅游同行，目前主要包括旅行社后台管理、 B2b 采购（线路、机票）、同业社区、在线客服等模块\u000D\u000A    3. 平台基础组件：公用组件、 h5 容器、基础组件开发\u000D\u000A\u000D\u000A\u000D\u000A    `前端开发工程师`\u000D\u000A    \u000D\u000A    1. 平台事业部移动前端开发工作\u000D\u000A    2. 平台事业部移动前端技术探索，协同客户端提升整体开发效率\u000D\u000A\u000D\u000A\u002D 投递邮箱：`chenqh@cncn.com`, 微信: `euan1022` qq:`345250716`",
+        "content_rendered" : "\u003Cul\u003E\u000A\u003Cli\u003E\u000A\u003Cp\u003E公司：厦门\u003Ccode\u003E欣欣旅游\u003C/code\u003E  \u003Ca href\u003D\u0022http://www.cncn.com\u0022 rel\u003D\u0022nofollow\u0022\u003Ewww.cncn.com\u003C/a\u003E \u0026amp\u003B \u003Ca href\u003D\u0022http://www.cncn.net\u0022 rel\u003D\u0022nofollow\u0022\u003Ewww.cncn.net\u003C/a\u003E\u003C/p\u003E\u000A\u003C/li\u003E\u000A\u003Cli\u003E\u000A\u003Cp\u003E坐标：厦门软件园二期望海路 2 号\u003C/p\u003E\u000A\u003C/li\u003E\u000A\u003Cli\u003E\u000A\u003Cp\u003E融资情况：\u003Ca href\u003D\u0022http://www.traveldaily.cn/article/104467\u0022 rel\u003D\u0022nofollow\u0022\u003E2016.06 B 轮融资\u003C/a\u003E\u003C/p\u003E\u000A\u003C/li\u003E\u000A\u003Cli\u003E\u000A\u003Cp\u003E行业：旅游电商\u003C/p\u003E\u000A\u003C/li\u003E\u000A\u003Cli\u003E\u000A\u003Cp\u003E要求：\u003C/p\u003E\u000A\u003Col\u003E\u000A\u003Cli\u003E对技术热忱，有好奇心，有协同做好一个产品的热情；\u003C/li\u003E\u000A\u003Cli\u003E做事尽责，我们期望能主动承担，在未来有成长空间的你；\u003C/li\u003E\u000A\u003Cli\u003E良好的学习能力，主动了解行业前沿技术并尝试应用；\u003C/li\u003E\u000A\u003C/ol\u003E\u000A\u003C/li\u003E\u000A\u003Cli\u003E\u000A\u003Cp\u003E岗位职责：\u003C/p\u003E\u000A\u003C/li\u003E\u000A\u003C/ul\u003E\u000A\u003Cpre\u003E\u003Ccode\u003E`Android 开发工程师`\u000A\u000A负责平台事业部下两款 App 的开发迭代\u000A\u000A1. 旅游顾问 App ：面向游客，目前主要包括顾问、机票、酒店、门票、传统线路、定制游、在线客服等模块\u000A2. 同业助手 App ：面向旅行社及旅游同行，目前主要包括旅行社后台管理、 B2b 采购（线路、机票）、同业社区、在线客服等模块\u000A3. 平台基础组件：公用组件、 h5 容器、基础组件开发\u000A\u000A\u000A`前端开发工程师`\u000A\u000A1. 平台事业部移动前端开发工作\u000A2. 平台事业部移动前端技术探索，协同客户端提升整体开发效率\u000A\u003C/code\u003E\u003C/pre\u003E\u000A\u003Cul\u003E\u000A\u003Cli\u003E投递邮箱：\u003Ccode\u003Echenqh@cncn.com\u003C/code\u003E, 微信: \u003Ccode\u003Eeuan1022\u003C/code\u003E qq:\u003Ccode\u003E345250716\u003C/code\u003E\u003C/li\u003E\u000A\u003C/ul\u003E\u000A",
+        "replies" : 0,
+        "member" : {
+            "id" : 42686,
+            "username" : "euan1022",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/bbad/bbe2/42686_mini.png?m=1401097337",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/bbad/bbe2/42686_normal.png?m=1401097337",
+            "avatar_large" : "//cdn.v2ex.co/avatar/bbad/bbe2/42686_large.png?m=1401097337"
+        },
+        "node" : {
+            "id" : 43,
+            "name" : "jobs",
+            "title" : "酷工作",
+            "title_alternative" : "Jobs",
+            "url" : "http://www.v2ex.com/go/jobs",
+            "topics" : 16269,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/17e6/2166/43_mini.png?m=1466490548",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/17e6/2166/43_normal.png?m=1466490548",
+            "avatar_large" : "//cdn.v2ex.co/navatar/17e6/2166/43_large.png?m=1466490548"
+        },
+        "created" : 1466578297,
+        "last_modified" : 1466578351,
+        "last_touched" : 1466578117
+    },
+    
+    {
+        "id" : 287552,
+        "title" : "[我有平台 你有梦吗]",
+        "url" : "http://www.v2ex.com/t/287552",
+        "content" : "公司名称：深圳宜诺科技有限责任公司 \u000D\u000A\u000D\u000A坐标：深圳西丽（总公司）武汉洪山（分部） \u000D\u000A\u000D\u000A福利：五险一金 年底双薪 做五休二 扁平管理 \u000D\u000A\u000D\u000A简介：深圳宜诺科技科技有限公司成立于 2012 年，公司致力于设计和开发一系列终端设备和应用，帮助医生、健康服务人员和其他医疗卫生专业人员采集数据、解读数据、监控健康状态、预警并介入，从而实现随时随地给患者提供快捷的医疗健康咨询服务。 \u000D\u000A产品：智能硬件终端、手机 App 和云平台医疗与健康专家服务。 \u000D\u000A愿景：服务提供运营商，随时、随地、人人享有的医疗健康服务。 \u000D\u000A路径：以端带云，以云促端。聚焦健康养老，立足大数据云，发展移动健康服务。 \u000D\u000A\u000D\u000A [招聘地点：武汉]  \u000D\u000A\u000D\u000A\u000D\u000A随着公司的发展以及项目的推进，我们需要更多新鲜的血液来创造更好的未来。 \u000D\u000A目前，我们正在做技术的革新，会有足够的空间给你发挥。 \u000D\u000A为此，我们需要： \u000D\u000A\u000D\u000AWeb 开发工程师 \u000D\u000A\u000D\u000A[工作职责] \u000D\u000A\u000D\u000A1. 负责基于浏览器或者基于 React Native 的 Javascript 开发； \u000D\u000A\u000D\u000A[职位要求] \u000D\u000A\u000D\u000A1. 有互联网精神； \u000D\u000A2. 熟悉 HTML ， CSS ， Javascript ； \u000D\u000A3. 了解流行的开源 JS 框架，比如 ReactJS ； \u000D\u000A\u000D\u000A\u000D\u000A服务器开发工程师 \u000D\u000A\u000D\u000A[工作职责] \u000D\u000A\u000D\u000A1. 使用最新的技术解决有挑战的问题； \u000D\u000A\u000D\u000A[职位要求] \u000D\u000A\u000D\u000A1. 有互联网精神； \u000D\u000A2. 熟悉 Linux/Mac ； \u000D\u000A3. 了解一种主流的编程语言，可以是 C/Java ，最好还了解一点函数式的编程语言比如 Python/Scala ，或者 Golang ； \u000D\u000A\u000D\u000A以上职位均无学历、资历要求，工作地点在武汉。只要你有信心，就可以投简历。 \u000D\u000A\u000D\u000A目前，我们已经开源了 3 份代码，我相信： \u000D\u000A\u000D\u000Ahttps://github.com/ideaalloc/yinuo\u002Dadmin.git \u000D\u000A\u000D\u000Ahttps://github.com/ideaalloc/yinuo\u002Dapi.git \u000D\u000A\u000D\u000Ahttps://github.com/ideaalloc/yinuo\u002Dtcp.git \u000D\u000A\u000D\u000A如果你感兴趣，可以发送简历到： \u000D\u000Abillcc_lv@yinuo\u002Dtech.com",
+        "content_rendered" : "公司名称：深圳宜诺科技有限责任公司 \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E坐标：深圳西丽（总公司）武汉洪山（分部） \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E福利：五险一金 年底双薪 做五休二 扁平管理 \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E简介：深圳宜诺科技科技有限公司成立于 2012 年，公司致力于设计和开发一系列终端设备和应用，帮助医生、健康服务人员和其他医疗卫生专业人员采集数据、解读数据、监控健康状态、预警并介入，从而实现随时随地给患者提供快捷的医疗健康咨询服务。 \u000D\u003Cbr /\u003E产品：智能硬件终端、手机 App 和云平台医疗与健康专家服务。 \u000D\u003Cbr /\u003E愿景：服务提供运营商，随时、随地、人人享有的医疗健康服务。 \u000D\u003Cbr /\u003E路径：以端带云，以云促端。聚焦健康养老，立足大数据云，发展移动健康服务。 \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E [招聘地点：武汉]  \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E随着公司的发展以及项目的推进，我们需要更多新鲜的血液来创造更好的未来。 \u000D\u003Cbr /\u003E目前，我们正在做技术的革新，会有足够的空间给你发挥。 \u000D\u003Cbr /\u003E为此，我们需要： \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003EWeb 开发工程师 \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E[工作职责] \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E1. 负责基于浏览器或者基于 React Native 的 Javascript 开发； \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E[职位要求] \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E1. 有互联网精神； \u000D\u003Cbr /\u003E2. 熟悉 HTML ， CSS ， Javascript ； \u000D\u003Cbr /\u003E3. 了解流行的开源 JS 框架，比如 ReactJS ； \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E服务器开发工程师 \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E[工作职责] \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E1. 使用最新的技术解决有挑战的问题； \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E[职位要求] \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E1. 有互联网精神； \u000D\u003Cbr /\u003E2. 熟悉 Linux/Mac ； \u000D\u003Cbr /\u003E3. 了解一种主流的编程语言，可以是 C/Java ，最好还了解一点函数式的编程语言比如 Python/Scala ，或者 Golang ； \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E以上职位均无学历、资历要求，工作地点在武汉。只要你有信心，就可以投简历。 \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E目前，我们已经开源了 3 份代码，我相信： \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E\u003Ca target\u003D\u0022_blank\u0022 href\u003D\u0022https://github.com/ideaalloc/yinuo\u002Dadmin.git\u0022 rel\u003D\u0022nofollow\u0022\u003Ehttps://github.com/ideaalloc/yinuo\u002Dadmin.git\u003C/a\u003E \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E\u003Ca target\u003D\u0022_blank\u0022 href\u003D\u0022https://github.com/ideaalloc/yinuo\u002Dapi.git\u0022 rel\u003D\u0022nofollow\u0022\u003Ehttps://github.com/ideaalloc/yinuo\u002Dapi.git\u003C/a\u003E \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E\u003Ca target\u003D\u0022_blank\u0022 href\u003D\u0022https://github.com/ideaalloc/yinuo\u002Dtcp.git\u0022 rel\u003D\u0022nofollow\u0022\u003Ehttps://github.com/ideaalloc/yinuo\u002Dtcp.git\u003C/a\u003E \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E如果你感兴趣，可以发送简历到： \u000D\u003Cbr /\u003E\u003Ca target\u003D\u0022_blank\u0022 href\u003D\u0022mailto:billcc_lv@yinuo\u002Dtech.com\u0022\u003Ebillcc_lv@yinuo\u002Dtech.com\u003C/a\u003E",
+        "replies" : 0,
+        "member" : {
+            "id" : 178510,
+            "username" : "nicoyao",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/b4c4/4766/178510_mini.png?m=1466578120",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/b4c4/4766/178510_normal.png?m=1466578120",
+            "avatar_large" : "//cdn.v2ex.co/avatar/b4c4/4766/178510_large.png?m=1466578120"
+        },
+        "node" : {
+            "id" : 79,
+            "name" : "server",
+            "title" : "服务器",
+            "title_alternative" : "Server",
+            "url" : "http://www.v2ex.com/go/server",
+            "topics" : 865,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/d1fe/173d/79_mini.png?m=1355936563",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/d1fe/173d/79_normal.png?m=1355936563",
+            "avatar_large" : "//cdn.v2ex.co/navatar/d1fe/173d/79_large.png?m=1355936563"
+        },
+        "created" : 1466578252,
+        "last_modified" : 1466578252,
+        "last_touched" : 1466491852
+    },
+    
+    {
+        "id" : 287550,
+        "title" : "有没有横向比较云计算产品价格的网站？各家的指标、收费方式不一样，有没有统一的比价？",
+        "url" : "http://www.v2ex.com/t/287550",
+        "content" : "",
+        "content_rendered" : "",
+        "replies" : 0,
+        "member" : {
+            "id" : 39784,
+            "username" : "WildCat",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/baf2/9ae7/39784_mini.png?m=1400686600",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/baf2/9ae7/39784_normal.png?m=1400686600",
+            "avatar_large" : "//cdn.v2ex.co/avatar/baf2/9ae7/39784_large.png?m=1400686600"
+        },
+        "node" : {
+            "id" : 12,
+            "name" : "qna",
+            "title" : "问与答",
+            "title_alternative" : "Questions and Answers",
+            "url" : "http://www.v2ex.com/go/qna",
+            "topics" : 71484,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_mini.png?m=1466294049",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_normal.png?m=1466294049",
+            "avatar_large" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_large.png?m=1466294049"
+        },
+        "created" : 1466577603,
+        "last_modified" : 1466577603,
+        "last_touched" : 1466577423
+    },
+    
+    {
+        "id" : 287549,
+        "title" : "如果全世界的比特币都流向了单一国家 ( 而非遍布全球 ) ，之后会发生什么？",
+        "url" : "http://www.v2ex.com/t/287549",
+        "content" : "深深的 *** \u000D\u000A\u000D\u000Ahttps://twitter.com/ruanyf/status/742224484355047425",
+        "content_rendered" : "深深的 *** \u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E\u003Ca target\u003D\u0022_blank\u0022 href\u003D\u0022https://twitter.com/ruanyf/status/742224484355047425\u0022 rel\u003D\u0022nofollow\u0022\u003Ehttps://twitter.com/ruanyf/status/742224484355047425\u003C/a\u003E",
+        "replies" : 2,
+        "member" : {
+            "id" : 112645,
+            "username" : "charlie21",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/gravatar/5765a702fda4ba24599890b4c40cc2de?s=24&d=retro",
+            "avatar_normal" : "//cdn.v2ex.co/gravatar/5765a702fda4ba24599890b4c40cc2de?s=48&d=retro",
+            "avatar_large" : "//cdn.v2ex.co/gravatar/5765a702fda4ba24599890b4c40cc2de?s=73&d=retro"
+        },
+        "node" : {
+            "id" : 403,
+            "name" : "bitcoin",
+            "title" : "Bitcoin",
+            "title_alternative" : "Bitcoin",
+            "url" : "http://www.v2ex.com/go/bitcoin",
+            "topics" : 656,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/bbf9/4b34/403_mini.png?m=1464570913",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/bbf9/4b34/403_normal.png?m=1464570913",
+            "avatar_large" : "//cdn.v2ex.co/navatar/bbf9/4b34/403_large.png?m=1464570913"
+        },
+        "created" : 1466577560,
+        "last_modified" : 1466577955,
+        "last_touched" : 1466578478
+    },
+    
+    {
+        "id" : 287548,
+        "title" : "求推荐一款可以装在 android 盒子上的类似 airplay 的软件",
+        "url" : "http://www.v2ex.com/t/287548",
+        "content" : "没买 chrome cast ，但有一台 apple tv ，老款的。\u000D\u000A\u000D\u000A手边还有一部小米手机和一台 android 高清播放器\u000D\u000A\u000D\u000A我想能不能做播放器里装个类似可以实现 airplay 功能的软件，既能投视频，又能做镜像的？\u000D\u000A\u000D\u000A盒子版本是 4.4 ，小米手机 6.0.1",
+        "content_rendered" : "没买 chrome cast ，但有一台 apple tv ，老款的。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E手边还有一部小米手机和一台 android 高清播放器\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E我想能不能做播放器里装个类似可以实现 airplay 功能的软件，既能投视频，又能做镜像的？\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E盒子版本是 4.4 ，小米手机 6.0.1",
+        "replies" : 1,
+        "member" : {
+            "id" : 30771,
+            "username" : "phlips5437",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/9e55/0bb1/30771_mini.png?m=1400383987",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/9e55/0bb1/30771_normal.png?m=1400383987",
+            "avatar_large" : "//cdn.v2ex.co/avatar/9e55/0bb1/30771_large.png?m=1400383987"
+        },
+        "node" : {
+            "id" : 12,
+            "name" : "qna",
+            "title" : "问与答",
+            "title_alternative" : "Questions and Answers",
+            "url" : "http://www.v2ex.com/go/qna",
+            "topics" : 71484,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_mini.png?m=1466294049",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_normal.png?m=1466294049",
+            "avatar_large" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_large.png?m=1466294049"
+        },
+        "created" : 1466577510,
+        "last_modified" : 1466577510,
+        "last_touched" : 1466577572
+    },
+    
+    {
+        "id" : 287547,
+        "title" : "Kubernetes 为什么很重要？",
+        "url" : "http://www.v2ex.com/t/287547",
+        "content" : "在本文中，我们从技术细节中抽离出来，从更抽象的层面上评估一下为什么容器、 Kubernetes 以及它呈现出的编程范式值得你去使用和整合到自己的技术栈中。\u000D\u000A\u000D\u000A我们的目标是在如何审视和可视化你的基础设施这个问题上，提供一个全局观，进而理解本文标题的精髓： Kubernetes 为什么很重要？\u000D\u000A\u000D\u000A## 文章概要\u000D\u000A\u000D\u000A**引言**\u000D\u000A\u000D\u000A●  Kubernetes 的根源\u000D\u000A\u000D\u000A●  Kubernetes 为什么很重要\u000D\u000A\u000D\u000A●  功能\u000D\u000A\u000D\u000A●  角色\u000D\u000A\u000D\u000A●  大局观\u000D\u000A\u000D\u000A●  结论\u000D\u000A\u000D\u000A●  引言\u000D\u000A\u000D\u000AKubernetes 的目的是成为容器的管理平面，同时它一直致力于满足真实世界中 app 运行和依赖的环境需求。一些例子能够说明 Kubernetes 能为 app 提供了什么，比如：存储卷访问、负载均衡、冗余、弹性伸缩、发布更新、以及配置和敏感内容的管理。\u000D\u000A\u000D\u000A应用为中心的实践（而非服务器为中心），正是有了上面提到的 kubernetes 的能力和特性，加上 docker 等容器引擎提供的打包功能，才得以快速发展。\u000D\u000A\u000D\u000A## Kubernetes 的起源\u000D\u000A\u000D\u000AKubernetes 最初起源于 Google ，它的前辈有 Borg 和 Omega 。这些系统的很多设计和实现理念都已经以不同的形式融入到 kubernetes 中，其中包括今天分布式系统的标准，也包括 Google 在过去很多年里积累下的最佳实践。\u000D\u000A\u000D\u000AKubernetes 最初被认为是 Borg 或 Omega 的“开源版”，事实并非如此。 Kubernetes 是一个全新的管理工具，专为 job 和 service 设计。它是完全开放的，任何人都可以提供意见。\u000D\u000A\u000D\u000AKubernetes 最初充分利用了 Google 多年的架构和运维经验。 2014 年 6 月开始接受公开的 commit ，后被证明能够充分简化开发、运维和管理负荷，很快吸引了一大批追随者和贡献者。\u000D\u000A\u000D\u000A***下图是社区活跃度快照：***\u000D\u000A\u000D\u000A![kubernetes1]( http://blog.tenxcloud.com/wp\u002Dcontent/uploads/2016/06/kubernetes1.png)\u000D\u000A(Source: Google)\u000D\u000A\u000D\u000A![重要 2]( http://blog.tenxcloud.com/wp\u002Dcontent/uploads/2016/06/%E9%87%8D%E8%A6%812.png)\u000D\u000A(Source: Google)\u000D\u000A\u000D\u000A![重要 3]( http://blog.tenxcloud.com/wp\u002Dcontent/uploads/2016/06/%E9%87%8D%E8%A6%813.png)\u000D\u000A(Source: RedMonk)\u000D\u000A\u000D\u000A这些图表充分展示了一个真实、独特和协作的技术社区。\u000D\u000A\u000D\u000A**\u003E\u003E\u003E\u003E认同**\u000D\u000A \u000D\u000A\u000D\u000A我们刚才已经提到，已经有大量的个人和企业认可 Kubernetes 。然而，真正的问题是，你是否愿意使用 Google 的方式运行你的应用和服务。\u000D\u000A\u000D\u000A我的意思是说， Kubernetes 不只是容器管理系统，通过它你可以深入了解谷歌是如何运作他们的基础设施的，这些基础设置支撑了 Gmail 、搜索、地图、甚至是谷歌云引擎（ GCE ）等产品。\u000D\u000A\u000D\u000A相应地，通过 Kubernetes ，你可以学习 Google 运行应用的方式。也就是说，你需要遵循一组约定俗成的设计原则，使您的应用程序能够高效地工作，具有良好的记录，能够轻松地扩展、管理您的应用程序。这并不意味着抛弃 OpenStack 或 AWS 等处理 IaaS 资源的工具，只是意味着这些系统留在原地做他们最拿手的工作，然后引入 Kubernetes 来满足您所有的应用程序需求。最终，集成 Kubernetes 和您喜爱的组件。\u000D\u000A\u000D\u000A因此，如果你考虑在当前的技术栈中使用 Kubernetes ，你必须信赖该项目所给予的基础和范式：从 Pod 开始，其它概念自然就接受了。这样做，将会使功能和灵活性达到空前的结合，此外， Kubernetes 设计上的前瞻性有助于重新定义应用程序的构建。\u000D\u000A\u000D\u000A## Kubernetes 为什么很重要\u000D\u000A\u000D\u000A在一篇关于 ACM 、 Borg 、 Omega 和 Kubernetes 的最新论文中有详细的说明， Kubernetes 可以帮助建立一个工具集，帮助管理\u0026扩展您的应用程序和团队。\u000D\u000A\u000D\u000A***Kubernetes 改进应用程序开发的方法如下︰***\u000D\u000A\u000D\u000A**\u003E\u003E\u003E\u003E功能**\u000D\u000A\u000D\u000A●   容器封装了应用环境，从应用程序开发者和部署基础设施中抽象掉很多机器和操作系统的细节。容器封装了应用运行环境，将机器和操作系统从开发人员和基础设施的许多细节中抽象出来。\u000D\u000A\u000D\u000A●    将管理 API 从机器为中心转变为应用为中心，极大优化了应用部署和回滚的体验，数据中心的” primary key ”也由”机器”转变为”应用”。\u000D\u000A\u000D\u000A●    API 向应用为中心迁移，团队不再需要关心特定机器和操作系统。\u000D\u000A\u000D\u000A●    关注于跨机器的应用程序，允许团队以更灵活、细粒度、模块化的方式进行开发和运维。\u000D\u000AKubernetes 的常用模式是， Pod 用来承载一个应用实例，而不是一个模块或复杂的应用。这个实例可以由一个小团队去开发和维护。\u000D\u000A\u000D\u000AKubernetes 其他组件都是建立在 POD 概念上的，如 ReplicaSets 、 Deployments 、 Services 等，从而大大简化应用程序需求、业务策略和团队的协调工作。你可以充分 Kubernetes 中的概念，这些概念不仅与 POD 交互，还允许你为应用程序添加更多的功能和特性。\u000D\u000A\u000D\u000A\u000D\u000A**\u003E\u003E\u003E\u003E角色**\u000D\u000A \u000D\u000A\u000D\u000A***Kubernetes 也会通过吸引到大量的不同的角色来协助你的组织：***\u000D\u000A\u000D\u000A**1.开发者：** 不仅可以创建多种多样的应用程序，还可以利用集群的内在特性实现应用程序的特殊要求\u000D\u000A\u000D\u000A这专门针对某些应用场景。比如开发人员想要针对特定的节点、节点集合、或者能够代表不同硬件资源的特定标签，以便进行 Pod 级别的调度。举个例子，要把应用程序运行在 AMD 而不是 Intel 的 CPU 架构上，或者希望充分利用 GPU ，甚至拥有超大内存的节点。\u000D\u000A\u000D\u000A消费同质化机器组成的机组 Kubernetes 中是完全可行的。 Kubernetes 的管理下，这些机器表现为为一个通用的计算资源池。\u000D\u000A\u000D\u000A当作宠物还是牲畜， Kubernetes 的哲学不仅体现在管理应用程序上，也体现在管理机器上。\u000D\u000A\u000D\u000A**2.DevOps ：** Kubernetes 中 Deployments 、 ReplicaSets 、 Services 等概念，都有助于环节运维压力，它一方面保证每个应用程序拥有一个声明式的控制策略，另一方面保证这些规格和策略时刻被遵循。\u000D\u000A\u000D\u000A**3.管理员：** 作为 Kubernetes 的一部分，管理员有权限使用 heapster 和 cadvisor 等工具管理容器资源的利用率、检查集群事件、 API 请求、监控数据，并且使用一些新特性，比如 kubedash 进行分析。\u000D\u000A\u000D\u000A多种不同的度量指标不仅能够帮助管理员了解 kubernetes 集群，也提供了应用程序粒度的数据。\u000D\u000A\u000D\u000A在其它系统中，从应用程序层面进行数据分析需要用户自己去实现。 Kubernetes 内置分析功能，并不是说为应用程序快速增长做准备，而是说这些分析信息是应用程序所必须的，你不应该自己去实现，而是由管理系统提供。\u000D\u000A\u000D\u000A**4.其他角色：** 许多不同的角色可以在最基础的层面与 Kubernetes 交互，比如在进行其他操作（创建、查询）时使用 dashboard 对集群进行可视化。\u000D\u000A\u000D\u000A## Kubernetes 概述\u000D\u000A\u000D\u000A为了让您对 Kubernetes 的运作机制有一个大局观，这里会用一些图来协助你理解这个项目的方方面面。\u000D\u000A\u000D\u000A正如 James Burke 的格言一样：\u000D\u000A\u000D\u000A***以史为鉴，方能面向未来。***\u000D\u000A\u000D\u000ABorg 是 Kubernetes 的始祖，它创造的集群认知理论为 Kubernetes 的诞生提供了基础。\u000D\u000A\u000D\u000A我们会从 Borg 论文中选取一些图标，这些图表不仅会帮助我们理解 Borg 的部署方式，也会说明同样的模型如何适用于 Kubernetes 。\u000D\u000A\u000D\u000A***在这里，我们采用从自顶向下的方法，将云计算架构可视化：***\u000D\u000A\u000D\u000A![重要 4]( http://blog.tenxcloud.com/wp\u002Dcontent/uploads/2016/06/%E9%87%8D%E8%A6%814.png)\u000D\u000A（ Borg 跨数据中心部署）\u000D\u000A\u000D\u000A我们进一步放大，查看 DataCenter （ DC Site ）中的每个 Building 都包含至少一个 Borg 集群（ Cluster ），它表现为一个 Cell ，包含大概 10000 台机器（ Machine ）：\u000D\u000A\u000D\u000A![重要 5]( http://blog.tenxcloud.com/wp\u002Dcontent/uploads/2016/06/%E9%87%8D%E8%A6%815.png)\u000D\u000A(审视数据中心内特定的一个集群）\u000D\u000A\u000D\u000A进一步放大，观察每个 Cell ，可以发现控制平面组件（ controll plane ）与工作节点（ workers/Nodes ）是分离的。 Borg alloc （与 Kubernetes Pod 类似）是应用程序或服务部署的唯一最小单元：\u000D\u000A\u000D\u000A![重要 6]( http://blog.tenxcloud.com/wp\u002Dcontent/uploads/2016/06/%E9%87%8D%E8%A6%816.png)\u000D\u000A（审视数据中心内一个特定的 Cell ）\u000D\u000A\u000D\u000A现在你可能已经注意到了，某些组件在 Borg 和 Kubernetes 系统中并行存在，尤其是 1:1 比例映射的集群和 Pod 的构成 — — 考虑到联邦 Kubernetes 部署时，这些相似之处更有意思。\u000D\u000A\u000D\u000A目前，虽然 Kubernetes 无法像 Borg 一样单个集群支撑 10000 个节点，但是最近的优化允许 Kubernetes 单个集群支持多达 1000 个节点和 30000 个 Pods ，同时 99%的 API 调用响应低于 1 秒、 99%的 Pods （镜像预先拉取）在 5 秒内启动。支撑规模是之前的 10 倍， Google 官方声称是 14 倍。\u000D\u000A\u000D\u000AKubernetes 无疑是最好的阶段，不仅因为很多公司将其用于生产环境（见上面的图），更是得益于它优异的性能和扩展性。\u000D\u000A\u000D\u000A## 结论\u000D\u000A\u000D\u000A我们希望你能更好地理解 Kubernetes 的重要性，以及如何开始组织构建你的集群以允许 kubernetes 集成。\u000D\u000A\u000D\u000A拥抱 Kubernetes 哲学最初看起来像补救技术债，但是它的设计哲学是经过深思熟虑的，展示的不仅是软件开发的正确方法，但对于从 ops 到管理等每个环节都很重要。\u000D\u000A\u000D\u000A直到下一次！\u000D\u000A\u000D\u000A本文由[时速云]( https://www.tenxcloud.com/)翻译，如若转载，需注明转载自“[时速云]( https://www.tenxcloud.com/)”\u000D\u000A\u000D\u000A原文链接：[https://corekube.com/2016/03/31/why\u002Ddoes\u002Dk8s\u002Dmatter/]\u000D\u000A( https://corekube.com/2016/03/31/why\u002Ddoes\u002Dk8s\u002Dmatter/)",
+        "content_rendered" : "\u003Cp\u003E在本文中，我们从技术细节中抽离出来，从更抽象的层面上评估一下为什么容器、 Kubernetes 以及它呈现出的编程范式值得你去使用和整合到自己的技术栈中。\u003C/p\u003E\u000A\u003Cp\u003E我们的目标是在如何审视和可视化你的基础设施这个问题上，提供一个全局观，进而理解本文标题的精髓： Kubernetes 为什么很重要？\u003C/p\u003E\u000A\u003Ch2\u003E文章概要\u003C/h2\u003E\u000A\u003Cp\u003E\u003Cstrong\u003E引言\u003C/strong\u003E\u003C/p\u003E\u000A\u003Cp\u003E●  Kubernetes 的根源\u003C/p\u003E\u000A\u003Cp\u003E●  Kubernetes 为什么很重要\u003C/p\u003E\u000A\u003Cp\u003E●  功能\u003C/p\u003E\u000A\u003Cp\u003E●  角色\u003C/p\u003E\u000A\u003Cp\u003E●  大局观\u003C/p\u003E\u000A\u003Cp\u003E●  结论\u003C/p\u003E\u000A\u003Cp\u003E●  引言\u003C/p\u003E\u000A\u003Cp\u003EKubernetes 的目的是成为容器的管理平面，同时它一直致力于满足真实世界中 app 运行和依赖的环境需求。一些例子能够说明 Kubernetes 能为 app 提供了什么，比如：存储卷访问、负载均衡、冗余、弹性伸缩、发布更新、以及配置和敏感内容的管理。\u003C/p\u003E\u000A\u003Cp\u003E应用为中心的实践（而非服务器为中心），正是有了上面提到的 kubernetes 的能力和特性，加上 docker 等容器引擎提供的打包功能，才得以快速发展。\u003C/p\u003E\u000A\u003Ch2\u003EKubernetes 的起源\u003C/h2\u003E\u000A\u003Cp\u003EKubernetes 最初起源于 Google ，它的前辈有 Borg 和 Omega 。这些系统的很多设计和实现理念都已经以不同的形式融入到 kubernetes 中，其中包括今天分布式系统的标准，也包括 Google 在过去很多年里积累下的最佳实践。\u003C/p\u003E\u000A\u003Cp\u003EKubernetes 最初被认为是 Borg 或 Omega 的“开源版”，事实并非如此。 Kubernetes 是一个全新的管理工具，专为 job 和 service 设计。它是完全开放的，任何人都可以提供意见。\u003C/p\u003E\u000A\u003Cp\u003EKubernetes 最初充分利用了 Google 多年的架构和运维经验。 2014 年 6 月开始接受公开的 commit ，后被证明能够充分简化开发、运维和管理负荷，很快吸引了一大批追随者和贡献者。\u003C/p\u003E\u000A\u003Cp\u003E\u003Cstrong\u003E\u003Cem\u003E下图是社区活跃度快照：\u003C/em\u003E\u003C/strong\u003E\u003C/p\u003E\u000A\u003Cp\u003E\u003Cimg alt\u003D\u0022kubernetes1\u0022 src\u003D\u0022http://blog.tenxcloud.com/wp\u002Dcontent/uploads/2016/06/kubernetes1.png\u0022\u003E\u000A(Source: Google)\u003C/p\u003E\u000A\u003Cp\u003E\u003Cimg alt\u003D\u0022重要 2\u0022 src\u003D\u0022http://blog.tenxcloud.com/wp\u002Dcontent/uploads/2016/06/%E9%87%8D%E8%A6%812.png\u0022\u003E\u000A(Source: Google)\u003C/p\u003E\u000A\u003Cp\u003E\u003Cimg alt\u003D\u0022重要 3\u0022 src\u003D\u0022http://blog.tenxcloud.com/wp\u002Dcontent/uploads/2016/06/%E9%87%8D%E8%A6%813.png\u0022\u003E\u000A(Source: RedMonk)\u003C/p\u003E\u000A\u003Cp\u003E这些图表充分展示了一个真实、独特和协作的技术社区。\u003C/p\u003E\u000A\u003Cp\u003E\u003Cstrong\u003E\u0026gt\u003B\u0026gt\u003B\u0026gt\u003B\u0026gt\u003B认同\u003C/strong\u003E\u003C/p\u003E\u000A\u003Cp\u003E我们刚才已经提到，已经有大量的个人和企业认可 Kubernetes 。然而，真正的问题是，你是否愿意使用 Google 的方式运行你的应用和服务。\u003C/p\u003E\u000A\u003Cp\u003E我的意思是说， Kubernetes 不只是容器管理系统，通过它你可以深入了解谷歌是如何运作他们的基础设施的，这些基础设置支撑了 Gmail 、搜索、地图、甚至是谷歌云引擎（ GCE ）等产品。\u003C/p\u003E\u000A\u003Cp\u003E相应地，通过 Kubernetes ，你可以学习 Google 运行应用的方式。也就是说，你需要遵循一组约定俗成的设计原则，使您的应用程序能够高效地工作，具有良好的记录，能够轻松地扩展、管理您的应用程序。这并不意味着抛弃 OpenStack 或 AWS 等处理 IaaS 资源的工具，只是意味着这些系统留在原地做他们最拿手的工作，然后引入 Kubernetes 来满足您所有的应用程序需求。最终，集成 Kubernetes 和您喜爱的组件。\u003C/p\u003E\u000A\u003Cp\u003E因此，如果你考虑在当前的技术栈中使用 Kubernetes ，你必须信赖该项目所给予的基础和范式：从 Pod 开始，其它概念自然就接受了。这样做，将会使功能和灵活性达到空前的结合，此外， Kubernetes 设计上的前瞻性有助于重新定义应用程序的构建。\u003C/p\u003E\u000A\u003Ch2\u003EKubernetes 为什么很重要\u003C/h2\u003E\u000A\u003Cp\u003E在一篇关于 ACM 、 Borg 、 Omega 和 Kubernetes 的最新论文中有详细的说明， Kubernetes 可以帮助建立一个工具集，帮助管理\u0026amp\u003B扩展您的应用程序和团队。\u003C/p\u003E\u000A\u003Cp\u003E\u003Cstrong\u003E\u003Cem\u003EKubernetes 改进应用程序开发的方法如下︰\u003C/em\u003E\u003C/strong\u003E\u003C/p\u003E\u000A\u003Cp\u003E\u003Cstrong\u003E\u0026gt\u003B\u0026gt\u003B\u0026gt\u003B\u0026gt\u003B功能\u003C/strong\u003E\u003C/p\u003E\u000A\u003Cp\u003E●   容器封装了应用环境，从应用程序开发者和部署基础设施中抽象掉很多机器和操作系统的细节。容器封装了应用运行环境，将机器和操作系统从开发人员和基础设施的许多细节中抽象出来。\u003C/p\u003E\u000A\u003Cp\u003E●    将管理 API 从机器为中心转变为应用为中心，极大优化了应用部署和回滚的体验，数据中心的” primary key ”也由”机器”转变为”应用”。\u003C/p\u003E\u000A\u003Cp\u003E●    API 向应用为中心迁移，团队不再需要关心特定机器和操作系统。\u003C/p\u003E\u000A\u003Cp\u003E●    关注于跨机器的应用程序，允许团队以更灵活、细粒度、模块化的方式进行开发和运维。\u000AKubernetes 的常用模式是， Pod 用来承载一个应用实例，而不是一个模块或复杂的应用。这个实例可以由一个小团队去开发和维护。\u003C/p\u003E\u000A\u003Cp\u003EKubernetes 其他组件都是建立在 POD 概念上的，如 ReplicaSets 、 Deployments 、 Services 等，从而大大简化应用程序需求、业务策略和团队的协调工作。你可以充分 Kubernetes 中的概念，这些概念不仅与 POD 交互，还允许你为应用程序添加更多的功能和特性。\u003C/p\u003E\u000A\u003Cp\u003E\u003Cstrong\u003E\u0026gt\u003B\u0026gt\u003B\u0026gt\u003B\u0026gt\u003B角色\u003C/strong\u003E\u003C/p\u003E\u000A\u003Cp\u003E\u003Cstrong\u003E\u003Cem\u003EKubernetes 也会通过吸引到大量的不同的角色来协助你的组织：\u003C/em\u003E\u003C/strong\u003E\u003C/p\u003E\u000A\u003Cp\u003E\u003Cstrong\u003E1.开发者：\u003C/strong\u003E 不仅可以创建多种多样的应用程序，还可以利用集群的内在特性实现应用程序的特殊要求\u003C/p\u003E\u000A\u003Cp\u003E这专门针对某些应用场景。比如开发人员想要针对特定的节点、节点集合、或者能够代表不同硬件资源的特定标签，以便进行 Pod 级别的调度。举个例子，要把应用程序运行在 AMD 而不是 Intel 的 CPU 架构上，或者希望充分利用 GPU ，甚至拥有超大内存的节点。\u003C/p\u003E\u000A\u003Cp\u003E消费同质化机器组成的机组 Kubernetes 中是完全可行的。 Kubernetes 的管理下，这些机器表现为为一个通用的计算资源池。\u003C/p\u003E\u000A\u003Cp\u003E当作宠物还是牲畜， Kubernetes 的哲学不仅体现在管理应用程序上，也体现在管理机器上。\u003C/p\u003E\u000A\u003Cp\u003E\u003Cstrong\u003E2.DevOps ：\u003C/strong\u003E Kubernetes 中 Deployments 、 ReplicaSets 、 Services 等概念，都有助于环节运维压力，它一方面保证每个应用程序拥有一个声明式的控制策略，另一方面保证这些规格和策略时刻被遵循。\u003C/p\u003E\u000A\u003Cp\u003E\u003Cstrong\u003E3.管理员：\u003C/strong\u003E 作为 Kubernetes 的一部分，管理员有权限使用 heapster 和 cadvisor 等工具管理容器资源的利用率、检查集群事件、 API 请求、监控数据，并且使用一些新特性，比如 kubedash 进行分析。\u003C/p\u003E\u000A\u003Cp\u003E多种不同的度量指标不仅能够帮助管理员了解 kubernetes 集群，也提供了应用程序粒度的数据。\u003C/p\u003E\u000A\u003Cp\u003E在其它系统中，从应用程序层面进行数据分析需要用户自己去实现。 Kubernetes 内置分析功能，并不是说为应用程序快速增长做准备，而是说这些分析信息是应用程序所必须的，你不应该自己去实现，而是由管理系统提供。\u003C/p\u003E\u000A\u003Cp\u003E\u003Cstrong\u003E4.其他角色：\u003C/strong\u003E 许多不同的角色可以在最基础的层面与 Kubernetes 交互，比如在进行其他操作（创建、查询）时使用 dashboard 对集群进行可视化。\u003C/p\u003E\u000A\u003Ch2\u003EKubernetes 概述\u003C/h2\u003E\u000A\u003Cp\u003E为了让您对 Kubernetes 的运作机制有一个大局观，这里会用一些图来协助你理解这个项目的方方面面。\u003C/p\u003E\u000A\u003Cp\u003E正如 James Burke 的格言一样：\u003C/p\u003E\u000A\u003Cp\u003E\u003Cstrong\u003E\u003Cem\u003E以史为鉴，方能面向未来。\u003C/em\u003E\u003C/strong\u003E\u003C/p\u003E\u000A\u003Cp\u003EBorg 是 Kubernetes 的始祖，它创造的集群认知理论为 Kubernetes 的诞生提供了基础。\u003C/p\u003E\u000A\u003Cp\u003E我们会从 Borg 论文中选取一些图标，这些图表不仅会帮助我们理解 Borg 的部署方式，也会说明同样的模型如何适用于 Kubernetes 。\u003C/p\u003E\u000A\u003Cp\u003E\u003Cstrong\u003E\u003Cem\u003E在这里，我们采用从自顶向下的方法，将云计算架构可视化：\u003C/em\u003E\u003C/strong\u003E\u003C/p\u003E\u000A\u003Cp\u003E\u003Cimg alt\u003D\u0022重要 4\u0022 src\u003D\u0022http://blog.tenxcloud.com/wp\u002Dcontent/uploads/2016/06/%E9%87%8D%E8%A6%814.png\u0022\u003E\u000A（ Borg 跨数据中心部署）\u003C/p\u003E\u000A\u003Cp\u003E我们进一步放大，查看 DataCenter （ DC Site ）中的每个 Building 都包含至少一个 Borg 集群（ Cluster ），它表现为一个 Cell ，包含大概 10000 台机器（ Machine ）：\u003C/p\u003E\u000A\u003Cp\u003E\u003Cimg alt\u003D\u0022重要 5\u0022 src\u003D\u0022http://blog.tenxcloud.com/wp\u002Dcontent/uploads/2016/06/%E9%87%8D%E8%A6%815.png\u0022\u003E\u000A(审视数据中心内特定的一个集群）\u003C/p\u003E\u000A\u003Cp\u003E进一步放大，观察每个 Cell ，可以发现控制平面组件（ controll plane ）与工作节点（ workers/Nodes ）是分离的。 Borg alloc （与 Kubernetes Pod 类似）是应用程序或服务部署的唯一最小单元：\u003C/p\u003E\u000A\u003Cp\u003E\u003Cimg alt\u003D\u0022重要 6\u0022 src\u003D\u0022http://blog.tenxcloud.com/wp\u002Dcontent/uploads/2016/06/%E9%87%8D%E8%A6%816.png\u0022\u003E\u000A（审视数据中心内一个特定的 Cell ）\u003C/p\u003E\u000A\u003Cp\u003E现在你可能已经注意到了，某些组件在 Borg 和 Kubernetes 系统中并行存在，尤其是 1:1 比例映射的集群和 Pod 的构成 — — 考虑到联邦 Kubernetes 部署时，这些相似之处更有意思。\u003C/p\u003E\u000A\u003Cp\u003E目前，虽然 Kubernetes 无法像 Borg 一样单个集群支撑 10000 个节点，但是最近的优化允许 Kubernetes 单个集群支持多达 1000 个节点和 30000 个 Pods ，同时 99%的 API 调用响应低于 1 秒、 99%的 Pods （镜像预先拉取）在 5 秒内启动。支撑规模是之前的 10 倍， Google 官方声称是 14 倍。\u003C/p\u003E\u000A\u003Cp\u003EKubernetes 无疑是最好的阶段，不仅因为很多公司将其用于生产环境（见上面的图），更是得益于它优异的性能和扩展性。\u003C/p\u003E\u000A\u003Ch2\u003E结论\u003C/h2\u003E\u000A\u003Cp\u003E我们希望你能更好地理解 Kubernetes 的重要性，以及如何开始组织构建你的集群以允许 kubernetes 集成。\u003C/p\u003E\u000A\u003Cp\u003E拥抱 Kubernetes 哲学最初看起来像补救技术债，但是它的设计哲学是经过深思熟虑的，展示的不仅是软件开发的正确方法，但对于从 ops 到管理等每个环节都很重要。\u003C/p\u003E\u000A\u003Cp\u003E直到下一次！\u003C/p\u003E\u000A\u003Cp\u003E本文由\u003Ca href\u003D\u0022https://www.tenxcloud.com/\u0022 rel\u003D\u0022nofollow\u0022\u003E时速云\u003C/a\u003E翻译，如若转载，需注明转载自“\u003Ca href\u003D\u0022https://www.tenxcloud.com/\u0022 rel\u003D\u0022nofollow\u0022\u003E时速云\u003C/a\u003E”\u003C/p\u003E\u000A\u003Cp\u003E原文链接：[\u003Ca href\u003D\u0022https://corekube.com/2016/03/31/why\u002Ddoes\u002Dk8s\u002Dmatter/\u0022 rel\u003D\u0022nofollow\u0022\u003Ehttps://corekube.com/2016/03/31/why\u002Ddoes\u002Dk8s\u002Dmatter/\u003C/a\u003E]\u000A( \u003Ca href\u003D\u0022https://corekube.com/2016/03/31/why\u002Ddoes\u002Dk8s\u002Dmatter/\u0022 rel\u003D\u0022nofollow\u0022\u003Ehttps://corekube.com/2016/03/31/why\u002Ddoes\u002Dk8s\u002Dmatter/\u003C/a\u003E)\u003C/p\u003E\u000A",
+        "replies" : 0,
+        "member" : {
+            "id" : 161695,
+            "username" : "Tenxcloud10",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/762c/7463/161695_mini.png?m=1459480464",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/762c/7463/161695_normal.png?m=1459480464",
+            "avatar_large" : "//cdn.v2ex.co/avatar/762c/7463/161695_large.png?m=1459480464"
+        },
+        "node" : {
+            "id" : 104,
+            "name" : "cloud",
+            "title" : "云计算",
+            "title_alternative" : "Cloud Computing",
+            "url" : "http://www.v2ex.com/go/cloud",
+            "topics" : 1556,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/c9e1/074f/104_mini.png?m=1466392930",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/c9e1/074f/104_normal.png?m=1466392930",
+            "avatar_large" : "//cdn.v2ex.co/navatar/c9e1/074f/104_large.png?m=1466392930"
+        },
+        "created" : 1466577356,
+        "last_modified" : 1466577356,
+        "last_touched" : 1466577176
+    },
+    
+    {
+        "id" : 287546,
+        "title" : "Mac 上的 SS 客户端规则列表 404 了。",
+        "url" : "http://www.v2ex.com/t/287546",
+        "content" : "list 确认被删了。。。有其他替代品吗？",
+        "content_rendered" : "\u003Cp\u003Elist 确认被删了。。。有其他替代品吗？\u003C/p\u003E\u000A",
+        "replies" : 3,
+        "member" : {
+            "id" : 100046,
+            "username" : "yjxjn",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/0190/09b3/100046_mini.png?m=1464240573",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/0190/09b3/100046_normal.png?m=1464240573",
+            "avatar_large" : "//cdn.v2ex.co/avatar/0190/09b3/100046_large.png?m=1464240573"
+        },
+        "node" : {
+            "id" : 22,
+            "name" : "macos",
+            "title" : "macOS",
+            "title_alternative" : "macOS",
+            "url" : "http://www.v2ex.com/go/macos",
+            "topics" : 8389,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/b6d7/67d2/22_mini.png?m=1466422043",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/b6d7/67d2/22_normal.png?m=1466422043",
+            "avatar_large" : "//cdn.v2ex.co/navatar/b6d7/67d2/22_large.png?m=1466422043"
+        },
+        "created" : 1466577256,
+        "last_modified" : 1466577256,
+        "last_touched" : 1466578589
+    },
+    
+    {
+        "id" : 287545,
+        "title" : "让时间再慢点走，多点时间做自己喜欢的事情！加入我们吧，一个拥有英商团体天然背景的互联网公司！！！实现你的梦想！诚聘 java web 前端",
+        "url" : "http://www.v2ex.com/t/287545",
+        "content" : "公司介绍：\u000D\u000A\u000D\u000A知为科技于 2014 年成立，先后控股或投资了 Ace Cafe 中国、国内最大 hellaflush 风格改装车聚乐部 iAcrophobia 、以及 AceWithus 文创孵化器。\u000D\u000A\u000D\u000A公司为英企背景，有使馆，英商团体的天然背景。创始人们有理想有激情愿为中国汽车机车文化服务，也得到了同行媒体、汽车厂牌商们多方爱戴。公司旗下线下运营的项目也受到地区政府大力扶持，并多次举办／承办个性十足的线下活动。\u000D\u000A\u000D\u000A公司属于创业型公司，团队的成员来自各大名校及小海归组成，整个团队运用的是行业领先的技术，公司为员工提供良好的办公环境和一流的办公设备配置，我们提倡不以加班为目的，高效工作，实行不打卡制度，满足大家睡懒觉的习惯，同时核心团队成员享受公司股权期权奖励。 办公地点坐落在充满艺术气息的 798 园区内，美女帅哥全都有，办公氛围其乐融融，不搞办公室小斗争，每天都在开开心心工作。 我们期望你是一个爱学习，善于钻研，经验不足但是积极上进的员工，如果你认同我们的观念，那就投简历过来吧！\u000D\u000A\u000D\u000Ajava 工程师\u000D\u000A岗位职责:\u000D\u000A1. 负责 app 服务器开发.\u000D\u000A2. 负责内部平台的服务器开发与维护.\u000D\u000A3. 与团队共同商讨，优化完成产品.\u000D\u000A任职要求：\u000D\u000A1. 统招本科以上学历， 3 － 5 年以上工作经验.\u000D\u000A2. 熟练使用 java 或者 scala.\u000D\u000A3. 熟悉持续集成,微服务架构.\u000D\u000A4. 熟悉 mysql redis mongodb.\u000D\u000A5. 熟悉 reactive 式异步编程优先.\u000D\u000A6. 熟悉 play framework, akka 优先.\u000D\u000A\u000D\u000Aweb 前端\u000D\u000A职位职责：\u000D\u000A1.负责 PC 端与移动端的前端开发与维护。\u000D\u000A2.负责内部平台的前端开发与维护。\u000D\u000A3.与团队共同商讨，优化完成产品。 \u000D\u000A任职要求：\u000D\u000A1.2 年以上前端工作经验。 熟练使用 html css javascript ，根据设计图完成页面。 \u000D\u000A2.熟练使用 reactjs 、 angularjs 、 backbonejs 等前端框架。 \u000D\u000A3.有独立构建 web App 经验的更佳。 至少熟悉一种后端语言，对 HTTP 协议有所了解。并且熟悉 RESTful 相关概念。 \u000D\u000A4.优秀的应届毕业生可以考虑。 \u000D\u000A如有意向，请把简历投至： hr@acegear.com ，谢谢！",
+        "content_rendered" : "\u003Cp\u003E公司介绍：\u003C/p\u003E\u000A\u003Cp\u003E知为科技于 2014 年成立，先后控股或投资了 Ace Cafe 中国、国内最大 hellaflush 风格改装车聚乐部 iAcrophobia 、以及 AceWithus 文创孵化器。\u003C/p\u003E\u000A\u003Cp\u003E公司为英企背景，有使馆，英商团体的天然背景。创始人们有理想有激情愿为中国汽车机车文化服务，也得到了同行媒体、汽车厂牌商们多方爱戴。公司旗下线下运营的项目也受到地区政府大力扶持，并多次举办／承办个性十足的线下活动。\u003C/p\u003E\u000A\u003Cp\u003E公司属于创业型公司，团队的成员来自各大名校及小海归组成，整个团队运用的是行业领先的技术，公司为员工提供良好的办公环境和一流的办公设备配置，我们提倡不以加班为目的，高效工作，实行不打卡制度，满足大家睡懒觉的习惯，同时核心团队成员享受公司股权期权奖励。 办公地点坐落在充满艺术气息的 798 园区内，美女帅哥全都有，办公氛围其乐融融，不搞办公室小斗争，每天都在开开心心工作。 我们期望你是一个爱学习，善于钻研，经验不足但是积极上进的员工，如果你认同我们的观念，那就投简历过来吧！\u003C/p\u003E\u000A\u003Cp\u003Ejava 工程师\u000A岗位职责:\u003C/p\u003E\u000A\u003Col\u003E\u000A\u003Cli\u003E负责 app 服务器开发.\u003C/li\u003E\u000A\u003Cli\u003E负责内部平台的服务器开发与维护.\u003C/li\u003E\u000A\u003Cli\u003E与团队共同商讨，优化完成产品.\u000A任职要求：\u003C/li\u003E\u000A\u003Cli\u003E统招本科以上学历， 3 － 5 年以上工作经验.\u003C/li\u003E\u000A\u003Cli\u003E熟练使用 java 或者 scala.\u003C/li\u003E\u000A\u003Cli\u003E熟悉持续集成,微服务架构.\u003C/li\u003E\u000A\u003Cli\u003E熟悉 mysql redis mongodb.\u003C/li\u003E\u000A\u003Cli\u003E熟悉 reactive 式异步编程优先.\u003C/li\u003E\u000A\u003Cli\u003E熟悉 play framework, akka 优先.\u003C/li\u003E\u000A\u003C/ol\u003E\u000A\u003Cp\u003Eweb 前端\u000A职位职责：\u000A1.负责 PC 端与移动端的前端开发与维护。\u000A2.负责内部平台的前端开发与维护。\u000A3.与团队共同商讨，优化完成产品。\u000A任职要求：\u000A1.2 年以上前端工作经验。 熟练使用 html css javascript ，根据设计图完成页面。\u000A2.熟练使用 reactjs 、 angularjs 、 backbonejs 等前端框架。\u000A3.有独立构建 web App 经验的更佳。 至少熟悉一种后端语言，对 HTTP 协议有所了解。并且熟悉 RESTful 相关概念。\u000A4.优秀的应届毕业生可以考虑。\u000A如有意向，请把简历投至： hr@acegear.com ，谢谢！\u003C/p\u003E\u000A",
+        "replies" : 0,
+        "member" : {
+            "id" : 172719,
+            "username" : "zhiweikeji2016",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/gravatar/231200a05efdeb5de503fc2a46637bef?s=24&d=retro",
+            "avatar_normal" : "//cdn.v2ex.co/gravatar/231200a05efdeb5de503fc2a46637bef?s=48&d=retro",
+            "avatar_large" : "//cdn.v2ex.co/gravatar/231200a05efdeb5de503fc2a46637bef?s=73&d=retro"
+        },
+        "node" : {
+            "id" : 43,
+            "name" : "jobs",
+            "title" : "酷工作",
+            "title_alternative" : "Jobs",
+            "url" : "http://www.v2ex.com/go/jobs",
+            "topics" : 16269,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/17e6/2166/43_mini.png?m=1466490548",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/17e6/2166/43_normal.png?m=1466490548",
+            "avatar_large" : "//cdn.v2ex.co/navatar/17e6/2166/43_large.png?m=1466490548"
+        },
+        "created" : 1466577157,
+        "last_modified" : 1466577157,
+        "last_touched" : 1466576977
+    },
+    
+    {
+        "id" : 287544,
+        "title" : "有没有什么好的第三方支付可以推荐的？",
+        "url" : "http://www.v2ex.com/t/287544",
+        "content" : "除去微信支付、支付宝支付外，有没有值得推荐的第三方支付平台呢？",
+        "content_rendered" : "除去微信支付、支付宝支付外，有没有值得推荐的第三方支付平台呢？",
+        "replies" : 3,
+        "member" : {
+            "id" : 31876,
+            "username" : "Robias",
+            "tagline" : "不知道该说什么",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/3695/c150/31876_mini.png?m=1357481223",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/3695/c150/31876_normal.png?m=1357481223",
+            "avatar_large" : "//cdn.v2ex.co/avatar/3695/c150/31876_large.png?m=1357481223"
+        },
+        "node" : {
+            "id" : 12,
+            "name" : "qna",
+            "title" : "问与答",
+            "title_alternative" : "Questions and Answers",
+            "url" : "http://www.v2ex.com/go/qna",
+            "topics" : 71484,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_mini.png?m=1466294049",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_normal.png?m=1466294049",
+            "avatar_large" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_large.png?m=1466294049"
+        },
+        "created" : 1466577150,
+        "last_modified" : 1466577150,
+        "last_touched" : 1466578031
+    },
+    
+    {
+        "id" : 287543,
+        "title" : "分享一个我写的爬淘宝商品评价的爬虫源码",
+        "url" : "http://www.v2ex.com/t/287543",
+        "content" : "源码分享在 github 上了   https://github.com/ShenJianShou/crawler_samples/blob/master/taobao.js\u000D\u000A\u000D\u000A对于自己想编写爬虫的米娜桑  可以看看这个开发文档  我写的时候也参考了下  http://doc.shenjianshou.cn/\u000D\u000A\u000D\u000A对爬虫感兴趣的可以加 qq 群讨论： 342953471",
+        "content_rendered" : "\u003Cp\u003E源码分享在 github 上了   \u003Ca href\u003D\u0022https://github.com/ShenJianShou/crawler_samples/blob/master/taobao.js\u0022 rel\u003D\u0022nofollow\u0022\u003Ehttps://github.com/ShenJianShou/crawler_samples/blob/master/taobao.js\u003C/a\u003E\u003C/p\u003E\u000A\u003Cp\u003E对于自己想编写爬虫的米娜桑  可以看看这个开发文档  我写的时候也参考了下  \u003Ca href\u003D\u0022http://doc.shenjianshou.cn/\u0022 rel\u003D\u0022nofollow\u0022\u003Ehttp://doc.shenjianshou.cn/\u003C/a\u003E\u003C/p\u003E\u000A\u003Cp\u003E对爬虫感兴趣的可以加 qq 群讨论： 342953471\u003C/p\u003E\u000A",
+        "replies" : 1,
+        "member" : {
+            "id" : 173578,
+            "username" : "sanwenshi",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/gravatar/03d33c8cf32efd772b10d83f36176fb4?s=24&d=retro",
+            "avatar_normal" : "//cdn.v2ex.co/gravatar/03d33c8cf32efd772b10d83f36176fb4?s=48&d=retro",
+            "avatar_large" : "//cdn.v2ex.co/gravatar/03d33c8cf32efd772b10d83f36176fb4?s=73&d=retro"
+        },
+        "node" : {
+            "id" : 436,
+            "name" : "nodejs",
+            "title" : "Node.js",
+            "title_alternative" : "Node.js",
+            "url" : "http://www.v2ex.com/go/nodejs",
+            "topics" : 999,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/2421/fcb1/436_mini.png?m=1466399711",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/2421/fcb1/436_normal.png?m=1466399711",
+            "avatar_large" : "//cdn.v2ex.co/navatar/2421/fcb1/436_large.png?m=1466399711"
+        },
+        "created" : 1466577064,
+        "last_modified" : 1466577064,
+        "last_touched" : 1466577193
+    },
+    
+    {
+        "id" : 287542,
+        "title" : "怎么投诉虚拟运营商？",
+        "url" : "http://www.v2ex.com/t/287542",
+        "content" : "## 　　前段时间买了一个 1 年期的阿里小号，想着有保护个人信息之类的作用，先用到了网购时填写的买家联系方式上，跟小区门口新装的快递包裹投放柜配合起来作用应该会很明显\u000D\u000A## 　　但是不测随之而来，快递投放柜的取件密码都是短信发到收件人手机上的，也就是我的阿里小号上，但是等到快递妥投之后（查物流信息得知）我的阿里小号并没有收到取件密码，不能取自己的包裹这让我很着急，打阿里小号的 10029 客服电话也只是在询问了我的手机号码后说会核实，叫我等反馈，之后的事情就是一直没有反馈\u000D\u000A## 当然问题最终是通过联系快递投放柜公司再加上协调快递小哥解决的，阿里作为责任方并没有任何实际行动，仅仅是空口承诺了 3 个字“会核实”就不了了之了，之后我又打电话给客服咨询能不能注销号码并且退款事宜，得到了明确的否定回答\u000D\u000A## 这让我很生气，不是在乎那一年期的小号服务费有多少，而是阿里这么一个国际化的大公司，搞一个新兴的虚拟运营商服务，竟然做的这么不以为然，这态度实在让人气愤，这次是快递柜取件密码短信收不到，谁知道下次还会有什么重要的短信收不到之类的劣质服务……\u000D\u000A## 我想投诉阿里虚拟运营商，不要 10029 这样自己管自己的，有没有什么途径是专门投诉虚拟运营商的，就像“国家邮政局申诉网站”就能投诉所有的快递公司一样的能投诉所有虚拟运营商的地方？",
+        "content_rendered" : "\u003Ch2\u003E前段时间买了一个 1 年期的阿里小号，想着有保护个人信息之类的作用，先用到了网购时填写的买家联系方式上，跟小区门口新装的快递包裹投放柜配合起来作用应该会很明显\u003C/h2\u003E\u000A\u003Ch2\u003E但是不测随之而来，快递投放柜的取件密码都是短信发到收件人手机上的，也就是我的阿里小号上，但是等到快递妥投之后（查物流信息得知）我的阿里小号并没有收到取件密码，不能取自己的包裹这让我很着急，打阿里小号的 10029 客服电话也只是在询问了我的手机号码后说会核实，叫我等反馈，之后的事情就是一直没有反馈\u003C/h2\u003E\u000A\u003Ch2\u003E当然问题最终是通过联系快递投放柜公司再加上协调快递小哥解决的，阿里作为责任方并没有任何实际行动，仅仅是空口承诺了 3 个字“会核实”就不了了之了，之后我又打电话给客服咨询能不能注销号码并且退款事宜，得到了明确的否定回答\u003C/h2\u003E\u000A\u003Ch2\u003E这让我很生气，不是在乎那一年期的小号服务费有多少，而是阿里这么一个国际化的大公司，搞一个新兴的虚拟运营商服务，竟然做的这么不以为然，这态度实在让人气愤，这次是快递柜取件密码短信收不到，谁知道下次还会有什么重要的短信收不到之类的劣质服务……\u003C/h2\u003E\u000A\u003Ch2\u003E我想投诉阿里虚拟运营商，不要 10029 这样自己管自己的，有没有什么途径是专门投诉虚拟运营商的，就像“国家邮政局申诉网站”就能投诉所有的快递公司一样的能投诉所有虚拟运营商的地方？\u003C/h2\u003E\u000A",
+        "replies" : 3,
+        "member" : {
+            "id" : 72587,
+            "username" : "sutking",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/286b/1d8c/72587_mini.png?m=1445864192",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/286b/1d8c/72587_normal.png?m=1445864192",
+            "avatar_large" : "//cdn.v2ex.co/avatar/286b/1d8c/72587_large.png?m=1445864192"
+        },
+        "node" : {
+            "id" : 12,
+            "name" : "qna",
+            "title" : "问与答",
+            "title_alternative" : "Questions and Answers",
+            "url" : "http://www.v2ex.com/go/qna",
+            "topics" : 71484,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_mini.png?m=1466294049",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_normal.png?m=1466294049",
+            "avatar_large" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_large.png?m=1466294049"
+        },
+        "created" : 1466577038,
+        "last_modified" : 1466577109,
+        "last_touched" : 1466578108
+    },
+    
+    {
+        "id" : 287541,
+        "title" : "关于雷朋 2140f",
+        "url" : "http://www.v2ex.com/t/287541",
+        "content" : "有入手雷朋 2140f 的朋友，感觉怎么样",
+        "content_rendered" : "有入手雷朋 2140f 的朋友，感觉怎么样",
+        "replies" : 2,
+        "member" : {
+            "id" : 170546,
+            "username" : "414348489",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/gravatar/57580bd4e4e0bef7050d73484d94e57a?s=24&d=retro",
+            "avatar_normal" : "//cdn.v2ex.co/gravatar/57580bd4e4e0bef7050d73484d94e57a?s=48&d=retro",
+            "avatar_large" : "//cdn.v2ex.co/gravatar/57580bd4e4e0bef7050d73484d94e57a?s=73&d=retro"
+        },
+        "node" : {
+            "id" : 12,
+            "name" : "qna",
+            "title" : "问与答",
+            "title_alternative" : "Questions and Answers",
+            "url" : "http://www.v2ex.com/go/qna",
+            "topics" : 71484,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_mini.png?m=1466294049",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_normal.png?m=1466294049",
+            "avatar_large" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_large.png?m=1466294049"
+        },
+        "created" : 1466576687,
+        "last_modified" : 1466576687,
+        "last_touched" : 1466578768
+    },
+    
+    {
+        "id" : 287540,
+        "title" : "美团云企业认证享 7 折，推荐客户更有泰国游赠送！",
+        "url" : "http://www.v2ex.com/t/287540",
+        "content" : "（ 1 ）活动时间： 2016 年 6 月 22 日\u002D2016 年 7 月 22 日\u000D\u000A\u000D\u000A（ 2 ）活动链接： https://mos.meituan.com/activity1606?site\u003DV2EX\u0026location\u003Dhomepage\u0026campaign\u003D20160622sales\u000D\u000A\u000D\u000A（ 3 ）活动详情页：\u000D\u000A![美团云企业认证享 7 折，推荐客户更有泰国游赠送](//i.v2ex.co/S248839S.png)",
+        "content_rendered" : "\u003Cp\u003E（ 1 ）活动时间： 2016 年 6 月 22 日\u002D2016 年 7 月 22 日\u003C/p\u003E\u000A\u003Cp\u003E（ 2 ）活动链接： \u003Ca href\u003D\u0022https://mos.meituan.com/activity1606?site\u003DV2EX\u0026amp\u003Blocation\u003Dhomepage\u0026amp\u003Bcampaign\u003D20160622sales\u0022 rel\u003D\u0022nofollow\u0022\u003Ehttps://mos.meituan.com/activity1606?site\u003DV2EX\u0026amp\u003Blocation\u003Dhomepage\u0026amp\u003Bcampaign\u003D20160622sales\u003C/a\u003E\u003C/p\u003E\u000A\u003Cp\u003E（ 3 ）活动详情页：\u000A\u003Cimg alt\u003D\u0022美团云企业认证享 7 折，推荐客户更有泰国游赠送\u0022 src\u003D\u0022//i.v2ex.co/S248839S.png\u0022\u003E\u003C/p\u003E\u000A",
+        "replies" : 0,
+        "member" : {
+            "id" : 131633,
+            "username" : "MOScloud",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/bc05/e544/131633_mini.png?m=1439792077",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/bc05/e544/131633_normal.png?m=1439792077",
+            "avatar_large" : "//cdn.v2ex.co/avatar/bc05/e544/131633_large.png?m=1439792077"
+        },
+        "node" : {
+            "id" : 864,
+            "name" : "promotions",
+            "title" : "推广",
+            "title_alternative" : "Promotions",
+            "url" : "http://www.v2ex.com/go/promotions",
+            "topics" : 400,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/1fc2/1400/864_mini.png?m=1438866395",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/1fc2/1400/864_normal.png?m=1438866395",
+            "avatar_large" : "//cdn.v2ex.co/navatar/1fc2/1400/864_large.png?m=1438866395"
+        },
+        "created" : 1466576641,
+        "last_modified" : 1466576641,
+        "last_touched" : 1466580861
+    }
+    
+]

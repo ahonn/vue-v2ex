@@ -1,0 +1,34 @@
+
+
+[{
+    
+    "id" : 287559,
+    "title" : "新手用 Scrapy 写爬虫时，一直提示 URLError: \u003Curlopen error timed out\u003E求大神指导",
+    "url" : "http://www.v2ex.com/t/287559",
+    "content" : "```\u000D\u000AURLError: \u003Curlopen error timed out\u003E\u000D\u000A\u000D\u000A[boto] ERROR: Unable to read instance data, giving up\u000D\u000A```\u000D\u000A\u000D\u000A爬取的是豆瓣图书 Top250 （ https://book.douban.com/top250 ） 一直提示超时。\u000D\u000A\u000D\u000A但是爬取豆瓣 9 分书单（ https://www.douban.com/doulist/1264675/ ） 时就不会有问题。\u000D\u000A\u000D\u000A两个页面的结构基本一样，代码只是稍微不同，大致是一样的。\u000D\u000A\u000D\u000A但是在爬取时， Top250 的那个就一直报错， 9 分书单的那个可以正常爬取完成。\u000D\u000A\u000D\u000A```\u000D\u000Aimport scrapy\u000D\u000Afrom scrapy.contrib.spiders import CrawlSpider\u000D\u000Afrom scrapy.http import Request\u000D\u000Afrom scrapy.selector import Selector\u000D\u000Afrom douban_book.items import DoubanBookItem\u000D\u000A\u000D\u000Aclass Douban(CrawlSpider):\u000D\u000A    name \u003D \u0022dbbook\u0022\u000D\u000A    start_urls \u003D (\u000D\u000A        \u0027https://book.douban.com/top250\u0027\u000D\u000A    )\u000D\u000A```",
+    "content_rendered" : "\u003Cpre\u003E\u003Ccode\u003EURLError: \u0026lt\u003Burlopen error timed out\u0026gt\u003B\u000A\u000A[boto] ERROR: Unable to read instance data, giving up\u000A\u003C/code\u003E\u003C/pre\u003E\u000A\u003Cp\u003E爬取的是豆瓣图书 Top250 （ \u003Ca href\u003D\u0022https://book.douban.com/top250\u0022 rel\u003D\u0022nofollow\u0022\u003Ehttps://book.douban.com/top250\u003C/a\u003E ） 一直提示超时。\u003C/p\u003E\u000A\u003Cp\u003E但是爬取豆瓣 9 分书单（ \u003Ca href\u003D\u0022https://www.douban.com/doulist/1264675/\u0022 rel\u003D\u0022nofollow\u0022\u003Ehttps://www.douban.com/doulist/1264675/\u003C/a\u003E ） 时就不会有问题。\u003C/p\u003E\u000A\u003Cp\u003E两个页面的结构基本一样，代码只是稍微不同，大致是一样的。\u003C/p\u003E\u000A\u003Cp\u003E但是在爬取时， Top250 的那个就一直报错， 9 分书单的那个可以正常爬取完成。\u003C/p\u003E\u000A\u003Cpre\u003E\u003Ccode\u003Eimport scrapy\u000Afrom scrapy.contrib.spiders import CrawlSpider\u000Afrom scrapy.http import Request\u000Afrom scrapy.selector import Selector\u000Afrom douban_book.items import DoubanBookItem\u000A\u000Aclass Douban(CrawlSpider):\u000A    name \u003D \u0022dbbook\u0022\u000A    start_urls \u003D (\u000A        \u0027https://book.douban.com/top250\u0027\u000A    )\u000A\u003C/code\u003E\u003C/pre\u003E\u000A",
+    "replies" : 3,
+    "member" : {
+        "id" : 176336,
+        "username" : "cashew",
+        "tagline" : "",
+        "avatar_mini" : "//cdn.v2ex.co/avatar/4e71/23db/176336_mini.png?m=1465268476",
+        "avatar_normal" : "//cdn.v2ex.co/avatar/4e71/23db/176336_normal.png?m=1465268476",
+        "avatar_large" : "//cdn.v2ex.co/avatar/4e71/23db/176336_large.png?m=1465268476"
+    },
+    "node" : {
+        "id" : 90,
+        "name" : "python",
+        "title" : "Python",
+        "url" : "http://www.v2ex.com/go/python",
+        "topics" : 5095,
+        "avatar_mini" : "//cdn.v2ex.co/navatar/8613/985e/90_mini.png?m=1466392872",
+        "avatar_normal" : "//cdn.v2ex.co/navatar/8613/985e/90_normal.png?m=1466392872",
+        "avatar_large" : "//cdn.v2ex.co/navatar/8613/985e/90_large.png?m=1466392872"
+    },
+    "created" : 1466578747,
+    "last_modified" : 1466578959,
+    "last_touched" : 1466583145
+    
+}]
+

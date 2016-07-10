@@ -37,6 +37,10 @@ module.exports = {
           limit: 10000,
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /vux.src.*?js$/,
+        loader: 'babel'
       }
     ]
   },

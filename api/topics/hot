@@ -1,0 +1,313 @@
+[
+    
+    {
+        "id" : 291386,
+        "title" : "女朋友希望婚后知道我所有账号的密码，而我不愿意",
+        "url" : "http://www.v2ex.com/t/291386",
+        "content" : "不愿意的原因就像小时候写笔记不愿意给别人看一样，不知道各位愿不愿意向自己的另一半公布自己所有的密码。",
+        "content_rendered" : "不愿意的原因就像小时候写笔记不愿意给别人看一样，不知道各位愿不愿意向自己的另一半公布自己所有的密码。",
+        "replies" : 124,
+        "member" : {
+            "id" : 89479,
+            "username" : "yanw",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/gravatar/41b5b87bc2d192a771c5c039a8eba9cf?s=24&d=retro",
+            "avatar_normal" : "//cdn.v2ex.co/gravatar/41b5b87bc2d192a771c5c039a8eba9cf?s=48&d=retro",
+            "avatar_large" : "//cdn.v2ex.co/gravatar/41b5b87bc2d192a771c5c039a8eba9cf?s=73&d=retro"
+        },
+        "node" : {
+            "id" : 260,
+            "name" : "security",
+            "title" : "信息安全",
+            "title_alternative" : "Security",
+            "url" : "http://www.v2ex.com/go/security",
+            "topics" : 501,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/a4f2/3670/260_mini.png?m=1461570192",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/a4f2/3670/260_normal.png?m=1461570192",
+            "avatar_large" : "//cdn.v2ex.co/navatar/a4f2/3670/260_large.png?m=1461570192"
+        },
+        "created" : 1468060604,
+        "last_modified" : 1468061133,
+        "last_touched" : 1468138156
+    },
+    
+    {
+        "id" : 291394,
+        "title" : "关于声形码的思考",
+        "url" : "http://www.v2ex.com/t/291394",
+        "content" : "最近有个创意想法，但是有个技术难题，关于声形码的：\u003Cbr\u003E\u000D\u000A\u003Cbr\u003E\u000D\u000A需求路径：\u003Cbr\u003E\u000D\u000A原始声音～简化为声形码～扫描声形码～播放原始声音\u003Cbr\u003E\u000D\u000A\u003Cbr\u003E\u000D\u000A原理构思：\u003Cbr\u003E\u000D\u000A1 、录制原始声音，获得到一个完整的波形图\u003Cbr\u003E\u000D\u000A2 、简化，得到简化的波形图：声形码\u003Cbr\u003E\u000D\u000A3 、定义波峰波谷的绝对值在 1 ～ 5 取值（简化规则）\u003Cbr\u003E\u000D\u000A4 、得到一串整数的数学数字\u003Cbr\u003E\u000D\u000A5 、给这段数字赋值（链接原始录音）\u003Cbr\u003E\u000D\u000A6 、扫描这个声形码～得到数字～得到原始录音\u003Cbr\u003E\u000D\u000A\u000D\u000A\u000D\u000A\u003Cimg src\u003D\u0022http://chengfu.qiniudn.com/IMG_20160709_192601.jpg\u0022 /\u003E\u000D\u000A\u000D\u000A\u000D\u000A也许现在已经有类似成熟的技术了，如果您知道，请告诉我一下下；这是我这个创意想法非常重要的一个部分，所以，欢迎大家一起探讨～～～\u003Cbr\u003E",
+        "content_rendered" : "\u003Cp\u003E最近有个创意想法，但是有个技术难题，关于声形码的：\u003Cbr\u003E\u000A\u003Cbr\u003E\u000A需求路径：\u003Cbr\u003E\u000A原始声音～简化为声形码～扫描声形码～播放原始声音\u003Cbr\u003E\u000A\u003Cbr\u003E\u000A原理构思：\u003Cbr\u003E\u000A1 、录制原始声音，获得到一个完整的波形图\u003Cbr\u003E\u000A2 、简化，得到简化的波形图：声形码\u003Cbr\u003E\u000A3 、定义波峰波谷的绝对值在 1 ～ 5 取值（简化规则）\u003Cbr\u003E\u000A4 、得到一串整数的数学数字\u003Cbr\u003E\u000A5 、给这段数字赋值（链接原始录音）\u003Cbr\u003E\u000A6 、扫描这个声形码～得到数字～得到原始录音\u003Cbr\u003E\u003C/p\u003E\u000A\u003Cimg src\u003D\u0022http://chengfu.qiniudn.com/IMG_20160709_192601.jpg\u0022\u003E\u000A\u003Cp\u003E也许现在已经有类似成熟的技术了，如果您知道，请告诉我一下下；这是我这个创意想法非常重要的一个部分，所以，欢迎大家一起探讨～～～\u003Cbr\u003E\u003C/p\u003E\u000A",
+        "replies" : 63,
+        "member" : {
+            "id" : 174456,
+            "username" : "chengfu",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/gravatar/3cb2c71047306a4b5aa2da929e060635?s=24&d=retro",
+            "avatar_normal" : "//cdn.v2ex.co/gravatar/3cb2c71047306a4b5aa2da929e060635?s=48&d=retro",
+            "avatar_large" : "//cdn.v2ex.co/gravatar/3cb2c71047306a4b5aa2da929e060635?s=73&d=retro"
+        },
+        "node" : {
+            "id" : 300,
+            "name" : "programmer",
+            "title" : "程序员",
+            "title_alternative" : "Programmer",
+            "url" : "http://www.v2ex.com/go/programmer",
+            "topics" : 12500,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/94f6/d7e0/300_mini.png?m=1467996604",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/94f6/d7e0/300_normal.png?m=1467996604",
+            "avatar_large" : "//cdn.v2ex.co/navatar/94f6/d7e0/300_large.png?m=1467996604"
+        },
+        "created" : 1468063822,
+        "last_modified" : 1468063822,
+        "last_touched" : 1468133358
+    },
+    
+    {
+        "id" : 291377,
+        "title" : "现在小超市便利店移动支付普及率那么低吗？",
+        "url" : "http://www.v2ex.com/t/291377",
+        "content" : "去一些小超市和连锁便利店之类，问支不支持微信支付，说不能用，支付宝呢？也不能用？ Apple pay 就不用问了，难道这些个体户接入支付宝微信需要手续费吗？有些放牌子表示支持，付款时候说不能用，收银员一看微信支付支付宝支付就一脸鄙视，你要说刷信用卡他可能都要砍了你。",
+        "content_rendered" : "去一些小超市和连锁便利店之类，问支不支持微信支付，说不能用，支付宝呢？也不能用？ Apple pay 就不用问了，难道这些个体户接入支付宝微信需要手续费吗？有些放牌子表示支持，付款时候说不能用，收银员一看微信支付支付宝支付就一脸鄙视，你要说刷信用卡他可能都要砍了你。",
+        "replies" : 53,
+        "member" : {
+            "id" : 91376,
+            "username" : "gywo",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/93e2/a920/91376_mini.png?m=1459902245",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/93e2/a920/91376_normal.png?m=1459902245",
+            "avatar_large" : "//cdn.v2ex.co/avatar/93e2/a920/91376_large.png?m=1459902245"
+        },
+        "node" : {
+            "id" : 12,
+            "name" : "qna",
+            "title" : "问与答",
+            "title_alternative" : "Questions and Answers",
+            "url" : "http://www.v2ex.com/go/qna",
+            "topics" : 72432,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_mini.png?m=1467867963",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_normal.png?m=1467867963",
+            "avatar_large" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_large.png?m=1467867963"
+        },
+        "created" : 1468057976,
+        "last_modified" : 1468057976,
+        "last_touched" : 1468137392
+    },
+    
+    {
+        "id" : 291430,
+        "title" : "果然小便宜贪不得",
+        "url" : "http://www.v2ex.com/t/291430",
+        "content" : "这个学期开学的时候在二手东花了 ￥ 159 买了一个机械键盘（好吧，是有点便宜了）  \u000D\u000A键盘挺小巧的，买来给自己的dell笔记本用的，也挺合适的。  \u000D\u000A然后在学期末的倒数第三天（也就是今天），出现了问题，‘\u002D’键的键帽坏了,坏的样子像下面这样  \u000D\u000A![键帽]( https://ws4.sinaimg.cn/mw690/0063AxbLgw1f5o289012cj31kw16owvv.jpg)   \u000D\u000A虽然感觉用了一个学期了，算是不亏了，但是还觉得有点不舒服。  \u000D\u000A这个键盘给我的体验挺好的（毕竟第一次用机械键盘），比薄膜键盘舒服。体积很小，可以装包里带着走。也不是很种的那种。  \u000D\u000A159 的价格摆在那里，也不能要求太多，不过觉得以后买东西还是要先保证品质\u003D_\u003D。",
+        "content_rendered" : "\u003Cp\u003E这个学期开学的时候在二手东花了 ￥ 159 买了一个机械键盘（好吧，是有点便宜了）\u003Cbr\u003E\u000A键盘挺小巧的，买来给自己的dell笔记本用的，也挺合适的。\u003Cbr\u003E\u000A然后在学期末的倒数第三天（也就是今天），出现了问题，‘\u002D’键的键帽坏了,坏的样子像下面这样\u003Cbr\u003E\u000A\u003Cimg alt\u003D\u0022键帽\u0022 src\u003D\u0022https://ws4.sinaimg.cn/mw690/0063AxbLgw1f5o289012cj31kw16owvv.jpg\u0022\u003E\u003Cbr\u003E\u000A虽然感觉用了一个学期了，算是不亏了，但是还觉得有点不舒服。\u003Cbr\u003E\u000A这个键盘给我的体验挺好的（毕竟第一次用机械键盘），比薄膜键盘舒服。体积很小，可以装包里带着走。也不是很种的那种。\u003Cbr\u003E\u000A159 的价格摆在那里，也不能要求太多，不过觉得以后买东西还是要先保证品质\u003D_\u003D。\u003C/p\u003E\u000A",
+        "replies" : 45,
+        "member" : {
+            "id" : 170724,
+            "username" : "lechain",
+            "tagline" : "什么都想学，什么也没学会。",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/ef77/5d5d/170724_mini.png?m=1462324412",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/ef77/5d5d/170724_normal.png?m=1462324412",
+            "avatar_large" : "//cdn.v2ex.co/avatar/ef77/5d5d/170724_large.png?m=1462324412"
+        },
+        "node" : {
+            "id" : 693,
+            "name" : "mechanical",
+            "title" : "机械键盘",
+            "title_alternative" : "Mechanical Keyboard",
+            "url" : "http://www.v2ex.com/go/mechanical",
+            "topics" : 404,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/53e3/a716/693_mini.png?m=1442293085",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/53e3/a716/693_normal.png?m=1442293085",
+            "avatar_large" : "//cdn.v2ex.co/navatar/53e3/a716/693_large.png?m=1442293085"
+        },
+        "created" : 1468077617,
+        "last_modified" : 1468077770,
+        "last_touched" : 1468139185
+    },
+    
+    {
+        "id" : 291393,
+        "title" : "如何查看你的宽带是不是分配的内网 IP 地址？",
+        "url" : "http://www.v2ex.com/t/291393",
+        "content" : "",
+        "content_rendered" : "",
+        "replies" : 36,
+        "member" : {
+            "id" : 159090,
+            "username" : "qcloud",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/95d2/db28/159090_mini.png?m=1462975899",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/95d2/db28/159090_normal.png?m=1462975899",
+            "avatar_large" : "//cdn.v2ex.co/avatar/95d2/db28/159090_large.png?m=1462975899"
+        },
+        "node" : {
+            "id" : 108,
+            "name" : "bb",
+            "title" : "宽带症候群",
+            "title_alternative" : "Broadband Symptom Complex",
+            "url" : "http://www.v2ex.com/go/bb",
+            "topics" : 1824,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/a3c6/5c29/108_mini.png?m=1467364928",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/a3c6/5c29/108_normal.png?m=1467364928",
+            "avatar_large" : "//cdn.v2ex.co/navatar/a3c6/5c29/108_large.png?m=1467364928"
+        },
+        "created" : 1468062921,
+        "last_modified" : 1468063482,
+        "last_touched" : 1468117384
+    },
+    
+    {
+        "id" : 291407,
+        "title" : "房东把我的房门打开了！",
+        "url" : "http://www.v2ex.com/t/291407",
+        "content" : "卧槽！这算什么事？\u000D\u000A我上个月的 10 号找到了这家房子。今天正好小周休息！\u000D\u000A居然发生了这么屌屌的一幕:房东（就是那种专门帮别人看房的，管理房子的）跑来找我要房租，敲了一下门（随手一下），然后从他那满满的钥匙中找到我房间的备用钥匙，三下五除二开了我的门。\u000D\u000A我当时在床上躺着，因为听见门响了一下，我以为是别人无意识的敲门，或者是我太寂寞而产生的幻觉！我侧着耳朵听着门外的动静，然后就听到有钥匙开我的门，我当时心里的感觉就是:居然还有人用钥匙来试我家的门，这年头小偷也这么猖狂吗？但是门锁是三层死锁的，除非，，，\u000D\u000A没想到令我吃鸡的一幕出现了:我的门被打开了，我身边也没有啥顺手的防身工具，算了随机应变吧，我心中瞬间做好了准备。\u000D\u000A但是门一开，我发现门外的居然是房东，卧槽，然后房东给我说的一句话让我懵逼了:赶紧交房租吧！\u000D\u000A呵呵，10号还有一天，你们就这样把我的门开了，结果居然是这个原因。。。",
+        "content_rendered" : "卧槽！这算什么事？\u000D\u003Cbr /\u003E我上个月的 10 号找到了这家房子。今天正好小周休息！\u000D\u003Cbr /\u003E居然发生了这么屌屌的一幕:房东（就是那种专门帮别人看房的，管理房子的）跑来找我要房租，敲了一下门（随手一下），然后从他那满满的钥匙中找到我房间的备用钥匙，三下五除二开了我的门。\u000D\u003Cbr /\u003E我当时在床上躺着，因为听见门响了一下，我以为是别人无意识的敲门，或者是我太寂寞而产生的幻觉！我侧着耳朵听着门外的动静，然后就听到有钥匙开我的门，我当时心里的感觉就是:居然还有人用钥匙来试我家的门，这年头小偷也这么猖狂吗？但是门锁是三层死锁的，除非，，，\u000D\u003Cbr /\u003E没想到令我吃鸡的一幕出现了:我的门被打开了，我身边也没有啥顺手的防身工具，算了随机应变吧，我心中瞬间做好了准备。\u000D\u003Cbr /\u003E但是门一开，我发现门外的居然是房东，卧槽，然后房东给我说的一句话让我懵逼了:赶紧交房租吧！\u000D\u003Cbr /\u003E呵呵，10号还有一天，你们就这样把我的门开了，结果居然是这个原因。。。",
+        "replies" : 35,
+        "member" : {
+            "id" : 170594,
+            "username" : "466934322",
+            "tagline" : "",
+            "avatar_mini" : "//cdn.v2ex.co/gravatar/c3e7289c9d5805916c3d56d12dd3507c?s=24&d=retro",
+            "avatar_normal" : "//cdn.v2ex.co/gravatar/c3e7289c9d5805916c3d56d12dd3507c?s=48&d=retro",
+            "avatar_large" : "//cdn.v2ex.co/gravatar/c3e7289c9d5805916c3d56d12dd3507c?s=73&d=retro"
+        },
+        "node" : {
+            "id" : 21,
+            "name" : "shenzhen",
+            "title" : "深圳",
+            "title_alternative" : "Shenzhen",
+            "url" : "http://www.v2ex.com/go/shenzhen",
+            "topics" : 525,
+            "avatar_mini" : "/static/img/node_mini.png",
+            "avatar_normal" : "/static/img/node_normal.png",
+            "avatar_large" : "/static/img/node_large.png"
+        },
+        "created" : 1468070573,
+        "last_modified" : 1468070741,
+        "last_touched" : 1468138120
+    },
+    
+    {
+        "id" : 291497,
+        "title" : "[MSDN 我告诉你] 域名过期了.....",
+        "url" : "http://www.v2ex.com/t/291497",
+        "content" : "有谁知道是站长忘记续费了还是......",
+        "content_rendered" : "\u003Cp\u003E有谁知道是站长忘记续费了还是......\u003C/p\u003E\u000A",
+        "replies" : 32,
+        "member" : {
+            "id" : 112291,
+            "username" : "mikicomo",
+            "tagline" : "行若无事　汝心所向　梦之彼方",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/98a6/df6c/112291_mini.png?m=1450001371",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/98a6/df6c/112291_normal.png?m=1450001371",
+            "avatar_large" : "//cdn.v2ex.co/avatar/98a6/df6c/112291_large.png?m=1450001371"
+        },
+        "node" : {
+            "id" : 300,
+            "name" : "programmer",
+            "title" : "程序员",
+            "title_alternative" : "Programmer",
+            "url" : "http://www.v2ex.com/go/programmer",
+            "topics" : 12500,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/94f6/d7e0/300_mini.png?m=1467996604",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/94f6/d7e0/300_normal.png?m=1467996604",
+            "avatar_large" : "//cdn.v2ex.co/navatar/94f6/d7e0/300_large.png?m=1467996604"
+        },
+        "created" : 1468133883,
+        "last_modified" : 1468133883,
+        "last_touched" : 1468139028
+    },
+    
+    {
+        "id" : 291387,
+        "title" : "谷歌可以记录用户的活动并用时间线的方式列举出来",
+        "url" : "http://www.v2ex.com/t/291387",
+        "content" : "发现一个好东西 https://history.google.com/  \u000D\u000A竟然用时间线的方式把我所有的活动全部列出来，包括三个平台（linux，windows，android）下的 chrome， youtube 看过的视频， google now 上点开过的新闻。  \u000D\u000A记录的方式是浏览的网址+时间+次数。  \u000D\u000A刚刚发现的时候惊讶了，记得以前是没有的，不知道是什么时候推出的功能。",
+        "content_rendered" : "\u003Cp\u003E发现一个好东西 \u003Ca href\u003D\u0022https://history.google.com/\u0022 rel\u003D\u0022nofollow\u0022\u003Ehttps://history.google.com/\u003C/a\u003E\u003Cbr\u003E\u000A竟然用时间线的方式把我所有的活动全部列出来，包括三个平台（linux，windows，android）下的 chrome， youtube 看过的视频， google now 上点开过的新闻。\u003Cbr\u003E\u000A记录的方式是浏览的网址+时间+次数。\u003Cbr\u003E\u000A刚刚发现的时候惊讶了，记得以前是没有的，不知道是什么时候推出的功能。\u003C/p\u003E\u000A",
+        "replies" : 31,
+        "member" : {
+            "id" : 170724,
+            "username" : "lechain",
+            "tagline" : "什么都想学，什么也没学会。",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/ef77/5d5d/170724_mini.png?m=1462324412",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/ef77/5d5d/170724_normal.png?m=1462324412",
+            "avatar_large" : "//cdn.v2ex.co/avatar/ef77/5d5d/170724_large.png?m=1462324412"
+        },
+        "node" : {
+            "id" : 16,
+            "name" : "share",
+            "title" : "分享发现",
+            "title_alternative" : "Share",
+            "url" : "http://www.v2ex.com/go/share",
+            "topics" : 19663,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/c74d/97b0/16_mini.png?m=1467971141",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/c74d/97b0/16_normal.png?m=1467971141",
+            "avatar_large" : "//cdn.v2ex.co/navatar/c74d/97b0/16_large.png?m=1467971141"
+        },
+        "created" : 1468060951,
+        "last_modified" : 1468060980,
+        "last_touched" : 1468135966
+    },
+    
+    {
+        "id" : 291444,
+        "title" : "现在才发现原来 win10 下正确的输入语言切换方式是 win+space",
+        "url" : "http://www.v2ex.com/t/291444",
+        "content" : "我原先装的是 rime 输入法，默认设置为英文，但因为我经常误触 shift 键，导致在写代码的时候有些不方便。  \u000D\u000A后来我在系统里添加了英语语言，在写代码的时候，干脆把语言切换成英文，这样就不会误触了。但是语言要在各个窗口间切换的时候就显得有些麻烦了，我当时以为是和以前一样，\u0022control+shift\u0022，但是没用。  \u000D\u000A我开始一位是 rime 输入法的问题，就换了小小输入法，发现问题依旧，今天才看到，原来正确的切换方式是\u0022win+space\u0022。  \u000D\u000A再顺便说一个小技巧，在 markdown 下，如果要换行，只要在末尾加上两个空格就可以了。",
+        "content_rendered" : "\u003Cp\u003E我原先装的是 rime 输入法，默认设置为英文，但因为我经常误触 shift 键，导致在写代码的时候有些不方便。\u003Cbr\u003E\u000A后来我在系统里添加了英语语言，在写代码的时候，干脆把语言切换成英文，这样就不会误触了。但是语言要在各个窗口间切换的时候就显得有些麻烦了，我当时以为是和以前一样，\u0022control+shift\u0022，但是没用。\u003Cbr\u003E\u000A我开始一位是 rime 输入法的问题，就换了小小输入法，发现问题依旧，今天才看到，原来正确的切换方式是\u0022win+space\u0022。\u003Cbr\u003E\u000A再顺便说一个小技巧，在 markdown 下，如果要换行，只要在末尾加上两个空格就可以了。\u003C/p\u003E\u000A",
+        "replies" : 30,
+        "member" : {
+            "id" : 71794,
+            "username" : "DaCong",
+            "tagline" : "Work hard every day.",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/db03/0f90/71794_mini.png?m=1442650498",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/db03/0f90/71794_normal.png?m=1442650498",
+            "avatar_large" : "//cdn.v2ex.co/avatar/db03/0f90/71794_large.png?m=1442650498"
+        },
+        "node" : {
+            "id" : 16,
+            "name" : "share",
+            "title" : "分享发现",
+            "title_alternative" : "Share",
+            "url" : "http://www.v2ex.com/go/share",
+            "topics" : 19663,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/c74d/97b0/16_mini.png?m=1467971141",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/c74d/97b0/16_normal.png?m=1467971141",
+            "avatar_large" : "//cdn.v2ex.co/navatar/c74d/97b0/16_large.png?m=1467971141"
+        },
+        "created" : 1468106833,
+        "last_modified" : 1468106833,
+        "last_touched" : 1468136709
+    },
+    
+    {
+        "id" : 291493,
+        "title" : "在新疆（克拉玛依）出差了一段时间，深感内地人对新疆的陌生，各位有什么要问的没？",
+        "url" : "http://www.v2ex.com/t/291493",
+        "content" : "今天闲得无聊，跟各位来做个关于新疆，特别是新疆克拉玛依的在线问答。  \u000D\u000A\u000D\u000A以前的做项目也算跑遍大半个中国，新疆给我的感觉最为特别，与想象中的差别实在太大，故开此贴。  \u000D\u000A\u000D\u000A各位对新疆有什么问题，我基于自己的背景和理解，尽量如实回答你，如有错漏，请知情的朋友补上。  \u000D\u000A  \u000D\u000A\u000D\u000A\u000D\u000A我的背景： 82 年生的老码农，漂在深圳的湖南人， 2014 年参与公司一个大项目运作第一次来到新疆， 2015 年底项目中标并担任项目经理，从此每个月都要在新疆呆半个月（主要在克拉玛依）。  \u000D\u000A\u000D\u000A附这个季节的新疆美图:\u000D\u000A###### 万亩葵花：\u000D\u000A![万亩葵花]( http://ww2.sinaimg.cn/large/6233ece3jw1f5oqeee6s1j22o01s0e84.jpg)\u000D\u000A###### 鲜果：\u000D\u000A![苹果]( http://ww3.sinaimg.cn/large/6233ece3jw1f5oqh956k5j22o01s0qv6.jpg)\u000D\u000A###### 磕头机：\u000D\u000A![磕头机]( http://ww1.sinaimg.cn/large/6233ece3jw1f5oq7q4ejfj243k2b0kjp.jpg)",
+        "content_rendered" : "\u003Cp\u003E今天闲得无聊，跟各位来做个关于新疆，特别是新疆克拉玛依的在线问答。\u003C/p\u003E\u000A\u003Cp\u003E以前的做项目也算跑遍大半个中国，新疆给我的感觉最为特别，与想象中的差别实在太大，故开此贴。\u003C/p\u003E\u000A\u003Cp\u003E各位对新疆有什么问题，我基于自己的背景和理解，尽量如实回答你，如有错漏，请知情的朋友补上。\u003C/p\u003E\u000A\u003Cp\u003E我的背景： 82 年生的老码农，漂在深圳的湖南人， 2014 年参与公司一个大项目运作第一次来到新疆， 2015 年底项目中标并担任项目经理，从此每个月都要在新疆呆半个月（主要在克拉玛依）。\u003C/p\u003E\u000A\u003Cp\u003E附这个季节的新疆美图:\u003C/p\u003E\u000A\u003Ch6\u003E万亩葵花：\u003C/h6\u003E\u000A\u003Cp\u003E\u003Cimg alt\u003D\u0022万亩葵花\u0022 src\u003D\u0022http://ww2.sinaimg.cn/large/6233ece3jw1f5oqeee6s1j22o01s0e84.jpg\u0022\u003E\u003C/p\u003E\u000A\u003Ch6\u003E鲜果：\u003C/h6\u003E\u000A\u003Cp\u003E\u003Cimg alt\u003D\u0022苹果\u0022 src\u003D\u0022http://ww3.sinaimg.cn/large/6233ece3jw1f5oqh956k5j22o01s0qv6.jpg\u0022\u003E\u003C/p\u003E\u000A\u003Ch6\u003E磕头机：\u003C/h6\u003E\u000A\u003Cp\u003E\u003Cimg alt\u003D\u0022磕头机\u0022 src\u003D\u0022http://ww1.sinaimg.cn/large/6233ece3jw1f5oq7q4ejfj243k2b0kjp.jpg\u0022\u003E\u003C/p\u003E\u000A",
+        "replies" : 30,
+        "member" : {
+            "id" : 11888,
+            "username" : "mlhorizon",
+            "tagline" : "做软件，玩硬件；爱生活，爱折腾。",
+            "avatar_mini" : "//cdn.v2ex.co/avatar/94c2/8dcf/11888_mini.png?m=1372641551",
+            "avatar_normal" : "//cdn.v2ex.co/avatar/94c2/8dcf/11888_normal.png?m=1372641551",
+            "avatar_large" : "//cdn.v2ex.co/avatar/94c2/8dcf/11888_large.png?m=1372641551"
+        },
+        "node" : {
+            "id" : 12,
+            "name" : "qna",
+            "title" : "问与答",
+            "title_alternative" : "Questions and Answers",
+            "url" : "http://www.v2ex.com/go/qna",
+            "topics" : 72432,
+            "avatar_mini" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_mini.png?m=1467867963",
+            "avatar_normal" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_normal.png?m=1467867963",
+            "avatar_large" : "//cdn.v2ex.co/navatar/c20a/d4d7/12_large.png?m=1467867963"
+        },
+        "created" : 1468133131,
+        "last_modified" : 1468133585,
+        "last_touched" : 1468139153
+    }
+    
+]

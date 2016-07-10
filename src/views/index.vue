@@ -1,0 +1,23 @@
+<template>
+  <div>
+    <img class="cover" src="../assets/images/cover.jpg">
+  </div>
+</template>
+
+<script>
+  export default {
+    ready () {
+      setTimeout(() => {
+        this.$route.router.go({ name: 'list', query: { tab: 'latest' } });
+      }, 2000);
+    }
+  }
+</script>
+
+<style lang="less">
+  .cover {
+    width: 100%;
+    background-color: #fff;
+  }
+</style>
+

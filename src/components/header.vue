@@ -34,6 +34,14 @@
 </script>
 
 <style lang="less">
+  .vux-tab {
+    height: 35px;
+
+    .vux-tab-item {
+      line-height: 35px;
+    }
+  }
+
   .vux-header .vux-header-title, .vux-header h1 {
     margin-left: 88px;
   }

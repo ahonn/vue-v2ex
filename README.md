@@ -6,5 +6,5 @@ V2EX for vue + vue-router + vue-resource + vux
 
 ## screenshot
 
-![](http://ww4.sinaimg.cn/large/72f96cbagw1f5q36gbyytj20k00zkjur.jpg)
-![](http://ww3.sinaimg.cn/large/72f96cbagw1f5q371ww2wj20k00zk42v.jpg)
+![](http://7xqvel.com1.z0.glb.clouddn.com/vue-v2ex-1.jpg?imageView/2/w/300)
+![](http://7xqvel.com1.z0.glb.clouddn.com/vue-v2ex-2.jpg?imageView/2/w/300)

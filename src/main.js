@@ -9,10 +9,7 @@ import routerMap from './routers'
 Vue.use(VueRouter)
 Vue.use(VueResource)
 
-let router = new VueRouter({
-  history: true
-})
-
+let router = new VueRouter()
 
 var app = Vue.extend({})
 routerMap(router)

@@ -1,8 +1,6 @@
 <template>
   <v-header :page-title="pageTitle" :show-tab="true"></v-header>
-
   <v-items :topics="topics"></v-items> 
-
   <v-tabbar></v-tabbar>  
 </template>
 

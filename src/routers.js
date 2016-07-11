@@ -13,6 +13,12 @@ export default function (router) {
       component: function (resolve) {
         require(['./views/list.vue'], resolve)
       }
+    },
+    '/topic/:id': {
+      name: 'topic',
+      component: function (resolve) {
+        require(['./views/topic.vue'], resolve);
+      }
     }
   })
 }

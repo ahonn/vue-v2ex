@@ -1,6 +1,6 @@
 <template>
     <tabbar>
-      <tabbar-item v-for="item in tabbar" >
+      <tabbar-item v-for="item in tabbar" v-link="{ name: item.link }">
         <img slot="icon" :src="item.src">
         <span slot="label" v-text="item.name"></span>
       </tabbar-item>
@@ -17,6 +17,7 @@
         tabbar: [
           {
             name: "全部",
+            link: "list",
             src: "http://7xqvel.com1.z0.glb.clouddn.com/all.png"
           },
           {

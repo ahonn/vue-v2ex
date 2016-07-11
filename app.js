@@ -16,13 +16,14 @@ function getJSON(url, res) {
 
 app.get('/api/topics/:name', function(req, res) {
   var name = req.params.name
-  var v2exUrl = 'http://v2ex.com/api/topics/'
+  var v2exUrl = 'http://v2ex.com/api/topics/' + name + '.json'
 
-  if (name == 'latest' || name == 'hot') {
-    v2exUrl += name + '.json'
-  } else {
-    v2exUrl += 'show.json?node_name=' + name
-  }
+  getJSON(v2exUrl, res)
+})
+
+app.get('/api/topic/:id', function (req, res) {
+  var id = req.params.id
+  var v2exUrl = 'http://v2ex.com/api/topics/show.json?id='+ id
 
   getJSON(v2exUrl, res)
 })

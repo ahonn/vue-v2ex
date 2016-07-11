@@ -1,18 +1,11 @@
 # vue-v2ex
 
-> A Vue.js project
+V2EX for vue + vue-router + vue-resource + vux
 
-## Build Setup
+[Live Demo](http://v2ex.ahonn.me)
 
-``` bash
-# install dependencies
-npm install
+## screenshot
 
-# serve with hot reload at localhost:8080
-npm run dev
+![](http://ww4.sinaimg.cn/large/72f96cbagw1f5q36gbyytj20k00zkjur.jpg)
 
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+![](http://ww3.sinaimg.cn/large/72f96cbagw1f5q371ww2wj20k00zk42v.jpg)

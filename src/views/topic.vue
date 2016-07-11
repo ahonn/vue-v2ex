@@ -10,8 +10,7 @@
         <time>发布于：{{ topic.created | getTimeFromNow }}</time>
       </div>
     </div>
-    <div class="topic-content" v-html="topic.content_rendered">
-    </div>
+    <div class="topic-content" v-html="topic.content_rendered"></div>
 
     <!-- <div class="replies">
       <ul class="replies_list">

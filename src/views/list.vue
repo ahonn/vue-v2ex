@@ -18,23 +18,30 @@
     </div>
   </section>
 
+  <loading :show="isLoading" :text="Loading"></loading>
   <v-tabbar></v-tabbar>  
 </template>
 
 <script>
+  import Loading from 'vux/dist/components/loading'
+
   export default {
     data () {
       return {
         pageTitle: "全部",
+        isLoading: true,
         topics: []
       }
     },
     route: {
       data: function (transition) {
+        this.topics = []
+        this.isLoading = true
+        
         let query = transition.to.query
-
         let tab = query.tab || "latest"
 
+        this.delayHide()
         this.getTopics(tab)
       }
     },
@@ -45,13 +52,20 @@
         this.$http.get(url).then((response) => {
           if (response.ok) {
             this.topics = response.json()
+            this.isLoading = false
           }
         })
+      },
+      delayHide: function () {
+        setTimeout(() => {
+          this.isLoading = false
+        }, 5000)
       }
     },
     components: {
       "v-header": require('../components/header.vue'),
-      "v-tabbar": require('../components/tabbar.vue')
+      "v-tabbar": require('../components/tabbar.vue'),
+      Loading
     }
   }
 </script>

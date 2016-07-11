@@ -1,7 +1,7 @@
 <template>
   <v-header :page-title="pageTitle" :show-back="true"></v-header>
   
-  <section class="topic">
+  <section class="topic" v-if="topic.length != 0">
     <h2 class="topic-title" v-text="topic.title"></h2>
     <div class="topic-info">
       <img class="avatar" :src="topic.member.avatar_normal" />
@@ -27,16 +27,21 @@
         </li>
       </ul>
     </div> -->
+
   </section>
-  
+
+  <loading :show="isLoading" :text="Loading"></loading>
   <v-tabbar></v-tabbar>
 </template>
 
 <script>
+  import Loading from 'vux/dist/components/loading'
+
   export default {
     data () {
       return {
         pageTitle: "主题",
+        isLoading: true,
         topic: [],
         replies: []
       }
@@ -55,13 +60,15 @@
         this.$http.get(url).then((response) => {
           if (response.ok) {
             this.topic = response.json()[0]
+            this.isLoading = false
           }
         })
       }
     },
     components: {
       "v-header": require('../components/header.vue'),
-      "v-tabbar": require('../components/tabbar.vue')
+      "v-tabbar": require('../components/tabbar.vue'),
+      Loading
     }
   }
 </script>

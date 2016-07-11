@@ -16,7 +16,13 @@ function getJSON(url, res) {
 
 app.get('/api/topics/:name', function(req, res) {
   var name = req.params.name
-  var v2exUrl = 'http://v2ex.com/api/topics/' + name + '.json'
+  var v2exUrl = 'http://v2ex.com/api/topics/'
+
+  if (name == 'latest' || name == 'hot') {
+    v2exUrl += name + '.json'
+  } else {
+    v2exUrl += 'show.json?node_name=' + name
+  }
 
   getJSON(v2exUrl, res)
 })

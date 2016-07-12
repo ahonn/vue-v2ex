@@ -61,7 +61,7 @@
       delayHide: function () {
         setTimeout(() => {
           this.isLoading = false
-        }, 10000)
+        }, 5000)
       }
     },
     components: {

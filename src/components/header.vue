@@ -31,7 +31,7 @@
               name: 'hot'
             }, 
             {
-              title: '技术',
+              title: '科技',
               name: 'tech'
             },
             {

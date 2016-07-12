@@ -1,5 +1,7 @@
 <template>
-  <x-header :left-options="{showBack: showBack}">{{ pageTitle }}</x-header>
+  <sticky>
+    <x-header :left-options="{showBack: showBack}">{{ pageTitle }}</x-header>
+  </sticky>
 
   <tab :line-width="2" active-color="#334" v-if="showTab">
     <tab-item :selected="tabData.active === item.name" v-for="item in tabData.list" @click="tabData.active = item.name">
@@ -12,6 +14,7 @@
   import XHeader from 'vux/dist/components/x-header' 
   import Tab from 'vux/dist/components/tab'
   import TabItem from 'vux/dist/components/tab-item'
+  import Sticky from 'vux/dist/components/sticky' 
 
   export default {
     props: ['pageTitle', 'showBack', 'showTab'],
@@ -43,7 +46,8 @@
     components: {
       XHeader,
       Tab,
-      TabItem
+      TabItem,
+      Sticky
     }
   }
 </script>

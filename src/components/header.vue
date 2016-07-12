@@ -1,13 +1,13 @@
 <template>
   <sticky>
     <x-header :left-options="{showBack: showBack}">{{ pageTitle }}</x-header>
+  
+    <tab :line-width="2" active-color="#334" v-if="showTab">
+      <tab-item :selected="tabData.active === item.name" v-for="item in tabData.list" @click="tabData.active = item.name">
+        <span v-text="item.title" v-link="{ name: 'list', query: { tab: item.name } }"></span>
+      </tab-item>
+    </tab>
   </sticky>
-
-  <tab :line-width="2" active-color="#334" v-if="showTab">
-    <tab-item :selected="tabData.active === item.name" v-for="item in tabData.list" @click="tabData.active = item.name">
-      <span v-text="item.title" v-link="{ name: 'list', query: { tab: item.name } }"></span>
-    </tab-item>
-  </tab>
 </template>
 
 <script>

@@ -5,27 +5,25 @@
     <h2 class="topic-title" v-text="topic.title"></h2>
     <div class="topic-info">
       <img class="avatar" :src="topic.member.avatar_normal" />
-      <div class="col">
+      <div class="info">
         <span class="author" v-text="topic.member.username" ></span>
         <time>发布于：{{ topic.created | getTimeFromNow }}</time>
       </div>
     </div>
     <div class="topic-content" v-html="topic.content_rendered"></div>
 
-    <!-- <div class="replies">
-      <ul class="replies_list">
-        <li v-for="reply in replies" class="reply">
-          <div class="reply-info">
-            <img class="avatar" :src="reply.member.avatar_mini" />
-            <span class="username" v-text="reply.member.username"></span>
-            <span class="time" v-text="reply.created | getTimeStr true"></span>
-            <span class="floor" v-text="$index + 1"></span>
-          </div>
-          <div class="reply-content" v-html="reply.content_rendered">
-          </div>
-        </li>
-      </ul>
-    </div> -->
+    <div class="replies">
+      <div v-for="reply in replies" class="reply">
+        <div class="reply-info">
+          <img class="avatar" :src="reply.member.avatar_mini" />
+          <span class="username" v-text="reply.member.username"></span>
+          <span class="time" v-text="reply.created | getTimeFromNow"></span>
+          <span class="floor" v-text="$index + 1"></span>
+        </div>
+        <div class="reply-content" v-html="reply.content_rendered">
+        </div>
+      </div>
+    </div>
 
   </section>
 
@@ -47,9 +45,10 @@
     },
     route: {
       data: function (transition) {
-        let topicId = transition.to.params.id;
+        let id = transition.to.params.id;
 
-        this.getTopic(topicId)
+        this.getTopic(id)
+        this.getReply(id)
       }
     },
     methods: {
@@ -60,6 +59,15 @@
           if (response.ok) {
             this.topic = response.json()[0]
             this.isLoading = false
+          }
+        })
+      },
+      getReply: function (id) {
+        let url = '/api/replies/' + id
+
+        this.$http.get(url).then((response) => {
+          if (response.ok) {
+            this.replies = response.json()
           }
         })
       }
@@ -96,7 +104,7 @@
         border: 1px solid #f0f0f0;
       }
 
-      .col {
+      .info {
         display: inline-block;
         margin-left: 10px;
         position: relative;
@@ -118,6 +126,7 @@
     .topic-content {
       padding-bottom: 20px;
       font-size: 14px;
+      overflow-x: hidden;
 
       img {
         max-width: 100%;
@@ -126,6 +135,63 @@
       code {
         display: block;
         overflow-x: auto;
+      }
+    }
+
+    .replies {
+      list-style: none;
+      padding-left: 0px;
+      font-size: 14px;
+
+      .reply {
+        padding: 15px 0px;
+        border-top: 1px solid #ddd;
+
+        .reply-info {
+          width: 100%;
+          display: inline-block;
+          position: relative;
+
+          .avatar {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid #f0f0f0;
+          }
+
+          .username, .time {
+            margin-left: 5px;
+            position: relative;
+            top: -5px;
+          }
+
+          .time {
+            color: #bbb;
+            font-size: 12px;
+          }
+
+          .floor {
+            position: absolute;
+            right: 0px;
+            top: 5px;
+            color: #bbb;
+
+            &::before {
+              content: "#";
+              margin-right: 3px;
+            }
+          }
+        }
+
+        .reply-content {
+          margin-top: 5px;
+          word-break: break-all;
+          word-wrap: break-woed;
+
+          img {
+            max-width: 100%;
+          }
+        }
       }
     }
   }

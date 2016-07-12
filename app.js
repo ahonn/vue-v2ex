@@ -34,5 +34,12 @@ app.get('/api/topic/:id', function (req, res) {
   getJSON(v2exUrl, res)
 })
 
+app.get('/api/replies/:id', function (req, res) {
+    var id = req.params.id;
+    var v2exUrl = 'http://v2ex.com/api/replies/show.json?topic_id='+ id
+
+    getJSON(v2exUrl, res)
+});
+
 app.listen(80)
 console.log('Express started on 127.0.0.1:80')

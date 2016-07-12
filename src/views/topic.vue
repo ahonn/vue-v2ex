@@ -49,6 +49,7 @@
 
         this.getTopic(id)
         this.getReply(id)
+        this.isLoading = false
       }
     },
     methods: {
@@ -58,7 +59,6 @@
         this.$http.get(url).then((response) => {
           if (response.ok) {
             this.topic = response.json()[0]
-            this.isLoading = false
           }
         })
       },

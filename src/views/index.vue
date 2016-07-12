@@ -8,7 +8,7 @@
   export default {
     ready () {
       setTimeout(() => {
-        this.$route.router.go({ name: 'list', query: { tab: 'latest' } });
+        this.$route.router.go({ name: 'list' });
       }, 2000);
     }
   }

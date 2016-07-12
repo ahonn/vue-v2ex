@@ -41,6 +41,8 @@
         let query = transition.to.query
         let tab = query.tab || "latest"
 
+        this.$children[0].tabData.active = tab
+
         this.delayHide()
         this.getTopics(tab)
       }
@@ -59,7 +61,7 @@
       delayHide: function () {
         setTimeout(() => {
           this.isLoading = false
-        }, 5000)
+        }, 10000)
       }
     },
     components: {
@@ -74,7 +76,7 @@
   @import '~vux/dist/vux.css';
 
   .topics {
-    margin: 0px 15px 48px;
+    margin: 81px 15px 48px;
 
     .topic-item {
       padding: 15px 0px;

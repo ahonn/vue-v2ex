@@ -84,7 +84,7 @@
   @import '~vux/dist/vux.css';
 
   .topic {
-    margin: 0px 15px 48px;
+    margin: 60px 15px 48px;
 
     .topic-title {
       padding: 5px;

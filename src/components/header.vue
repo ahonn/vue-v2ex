@@ -1,5 +1,5 @@
 <template>
-  <sticky>
+  <div class="fixed">
     <x-header :left-options="{showBack: showBack}">{{ pageTitle }}</x-header>
   
     <tab :line-width="2" active-color="#334" v-if="showTab">
@@ -7,14 +7,13 @@
         <span v-text="item.title" v-link="{ name: 'list', query: { tab: item.name } }"></span>
       </tab-item>
     </tab>
-  </sticky>
+  </div>
 </template>
 
 <script>
   import XHeader from 'vux/dist/components/x-header' 
   import Tab from 'vux/dist/components/tab'
   import TabItem from 'vux/dist/components/tab-item'
-  import Sticky from 'vux/dist/components/sticky' 
 
   export default {
     props: ['pageTitle', 'showBack', 'showTab'],
@@ -46,13 +45,19 @@
     components: {
       XHeader,
       Tab,
-      TabItem,
-      Sticky
+      TabItem
     }
   }
 </script>
 
 <style lang="less">
+  .fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+  }
+
   .vux-tab {
     height: 35px;
 

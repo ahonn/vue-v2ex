@@ -4,7 +4,7 @@
   <section id="nodes" v-if="!isLoading">
     <div class="search">
       <input type="text" class="input-text" v-model="nodeTitle" placeholder="搜索节点" 
-        autofocus="autofocus" @focus="toggleTabbar" @blur="toggleTabbar">
+        @focus="toggleTabbar" @blur="toggleTabbar">
     </div>
     <div class="nodes">
       <a v-for="node in nodes | filterBy nodeTitle in 'title'" class="node-item" 

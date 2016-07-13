@@ -54,7 +54,7 @@
       toggleTabbar: function (event) {
         setTimeout(() => {
           this.showTabbar = !this.showTabbar
-        }, 500) 
+        }, this.showTabbar ? 0 : 200) 
       }
     },
     components: {

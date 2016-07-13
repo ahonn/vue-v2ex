@@ -1,7 +1,7 @@
 <template>
   <v-header :page-title="pageTitle" :show-back="true"></v-header>
   
-  <section class="topic" v-if="!isLoading">
+  <section class="topic" v-if="!isLoading && topic.length != 0">
     <h2 class="topic-title" v-text="topic.title"></h2>
     <div class="topic-info">
       <img class="avatar" :src="topic.member.avatar_normal" />
@@ -10,7 +10,7 @@
         <time>发布于：{{ topic.created | getTimeFromNow }}</time>
       </div>
     </div>
-    <div class="topic-content" v-html="topic.content_rendered"></div>
+    <div class="topic-content" v-html="topic.content_rendered" v-highlightjs></div>
 
     <div class="replies">
       <div v-for="reply in replies" class="reply">
@@ -32,6 +32,8 @@
 </template>
 
 <script>
+  import vHeader from '../components/header.vue'
+  import vTabbar from '../components/tabbar.vue'
   import Loading from 'vux/dist/components/loading'
 
   export default {
@@ -73,9 +75,9 @@
       }
     },
     components: {
-      "v-header": require('../components/header.vue'),
-      "v-tabbar": require('../components/tabbar.vue'),
-      Loading
+      "v-header": vHeader,
+      "v-tabbar": vTabbar,
+      "loading": Loading
     }
   }
 </script>
@@ -135,6 +137,7 @@
       code {
         display: block;
         overflow-x: auto;
+        border-radius: 5px;
       }
     }
 

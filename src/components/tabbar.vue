@@ -45,7 +45,7 @@
   
   .weui_tabbar_label {
     margin-bottom: 5px;
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .weui_tabbar_item {
@@ -58,7 +58,7 @@
   }
 
   .weui_tabbar_icon {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
   }
 </style>

@@ -47,7 +47,7 @@ app.get('/api/node/:name', function (req, res) {
   if (name == 'all') {
     var v2exUrl = 'http://v2ex.com/api/nodes/all.json'
   } else {
-    var v2exUrl = 'http://v2ex.com/api/topics/show.json?node_id=' + name
+    var v2exUrl = 'http://v2ex.com/api/topics/show.json?node_name=' + name
   }
 
   getJSON(v2exUrl, res)

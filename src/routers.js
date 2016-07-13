@@ -19,6 +19,18 @@ export default function (router) {
       component: function (resolve) {
         require(['./views/topic.vue'], resolve);
       }
+    },
+    '/nodes': {
+      name: 'nodes',
+      component: function (resolve) {
+        require(['./views/nodes.vue'], resolve);
+      }
+    },
+    '/node/:name': {
+      name: 'node',
+      component: function (resolve) {
+        require(['./views/node.vue'], resolve);
+      }
     }
   })
 }

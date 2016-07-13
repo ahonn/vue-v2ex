@@ -1,7 +1,7 @@
 <template>
   <v-header :page-title="pageTitle" :show-back="true"></v-header>
   
-  <section class="topic" v-if="!isLoading && topic.length != 0">
+  <section id="topic" v-if="!isLoading && topic.length != 0">
     <h2 class="topic-title" v-text="topic.title"></h2>
     <div class="topic-info">
       <img class="avatar" :src="topic.member.avatar_normal" />
@@ -49,12 +49,15 @@
       data: function (transition) {
         let id = transition.to.params.id;
 
-        this.delayHide()
         this.getTopic(id)
       }
     },
     methods: {
       getTopic: function (id) {
+        setTimeout(() => {
+          this.isLoading = false
+        }, 5000)
+
         this.$http.get('/api/topic/' + id).then((response) => {
           if (response.ok) {
             this.topic = response.json()[0]
@@ -67,11 +70,6 @@
             })
           }
         })
-      },
-      delayHide: function () {
-        setTimeout(() => {
-          this.isLoading = false
-        }, 5000)
       }
     },
     components: {
@@ -85,7 +83,7 @@
 <style lang="less">
   @import '~vux/dist/vux.css';
 
-  .topic {
+  #topic {
     margin: 60px 15px 48px;
 
     .topic-title {

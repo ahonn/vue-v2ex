@@ -1,8 +1,8 @@
 <template>
-  <v-header :page-title="pageTitle" :show-tab="true"></v-header>
+  <v-header :page-title="nodeTopics[0].node.title" :show-back="true"></v-header>
   
   <section id="topics">
-    <div class="topic-item" v-for="topic in topics" v-link="{ name: 'topic', params: { id: topic.id } }">
+    <div class="topic-item" v-for="topic in nodeTopics" v-link="{ name: 'topic', params: { id: topic.id } }">
       <div class="avatar">
         <img :src="topic.member.avatar_normal" :alt="topic.member.username" />
       </div>
@@ -30,27 +30,20 @@
   export default {
     data () {
       return {
-        pageTitle: "全部",
         isLoading: true,
-        topics: []
+        nodeTopics: []
       }
     },
     route: {
       data: function (transition) {
-        this.topics = []
-        this.isLoading = true
-        
-        let query = transition.to.query
-        let tab = query.tab || "latest"
+        let name = transition.to.params.name;
 
-        this.$children[0].tabData.active = tab
-
-        this.getTopics(tab)
+        this.getNodeTopics(name)
       }
     },
     methods: {
-      getTopics: function (tab) {
-        let url = '/api/topics/' + tab
+      getNodeTopics: function (name) {
+        let url = '/api/node/' + name
 
         setTimeout(() => {
           this.isLoading = false
@@ -58,7 +51,7 @@
 
         this.$http.get(url).then((response) => {
           if (response.ok) {
-            this.topics = response.json()
+            this.nodeTopics = response.json()
             this.isLoading = false
           }
         })
@@ -76,7 +69,7 @@
   @import '~vux/dist/vux.css';
 
   #topics {
-    margin: 81px 15px 48px;
+    margin: 46px 15px 48px;
 
     .topic-item {
       padding: 15px 0px;

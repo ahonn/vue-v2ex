@@ -18,9 +18,10 @@ Vue.directive('highlightjs', function() {
   Array.prototype.forEach.call(blocks, Hljs.highlightBlock);
 })
 
-let router = new VueRouter()
+Vue.config.debug = true
 
 var app = Vue.extend({})
+let router = new VueRouter()
 routerMap(router)
 
 router.start(app, "#app")

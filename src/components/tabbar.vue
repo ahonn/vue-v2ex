@@ -22,6 +22,7 @@
           },
           {
             name: "节点",
+            link: "nodes",
             src: "http://7xqvel.com1.z0.glb.clouddn.com/node.png"
           },
           {

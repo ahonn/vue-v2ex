@@ -35,11 +35,23 @@ app.get('/api/topic/:id', function (req, res) {
 })
 
 app.get('/api/replies/:id', function (req, res) {
-    var id = req.params.id;
-    var v2exUrl = 'http://v2ex.com/api/replies/show.json?topic_id='+ id
+  var id = req.params.id;
+  var v2exUrl = 'http://v2ex.com/api/replies/show.json?topic_id='+ id
 
-    getJSON(v2exUrl, res)
+  getJSON(v2exUrl, res)
 });
+
+app.get('/api/node/:name', function (req, res) {
+  var name = req.params.name
+
+  if (name == 'all') {
+    var v2exUrl = 'http://v2ex.com/api/nodes/all.json'
+  } else {
+    var v2exUrl = 'http://v2ex.com/api/topics/show.json?node_id=' + name
+  }
+
+  getJSON(v2exUrl, res)
+})
 
 app.listen(80)
 console.log('Express started on 127.0.0.1:80')

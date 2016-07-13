@@ -1,10 +1,10 @@
 <template>
-    <tabbar>
-      <tabbar-item v-for="item in tabbar" v-link="{ name: item.link }">
-        <img slot="icon" :src="item.src">
-        <span slot="label" v-text="item.name"></span>
-      </tabbar-item>
-    </tabbar>
+  <tabbar>
+    <tabbar-item v-for="item in tabbar" v-link="{ name: item.link }">
+      <img slot="icon" :src="item.src">
+      <span slot="label" v-text="item.name"></span>
+    </tabbar-item>
+  </tabbar>
 </template>
 
 <script>
@@ -12,6 +12,7 @@
   import TabbarItem from 'vux/dist/components/tabbar-item'
 
   export default {
+    porps: ['showTabbar'],
     data () {
       return {
         tabbar: [

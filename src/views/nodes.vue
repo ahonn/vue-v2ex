@@ -3,7 +3,7 @@
   
   <section id="nodes" v-if="!isLoading">
     <div class="search">
-      <input type="text" class="input-text" v-model="nodeTitle" placeholder="搜索节点" autofocus="autofocus">
+      <input type="text" class="input-text" v-model="nodeTitle" placeholder="搜索节点" autofocus="autofocus" @focus="toggleTabbar" @blur="toggleTabbar">
     </div>
     <div class="nodes">
       <a v-for="node in nodes | filterBy nodeTitle in 'title'" class="node-item" v-link="{ name: 'node', params: { name: node.name }}">
@@ -13,7 +13,7 @@
   </section>
 
   <loading :show="isLoading" :text="Loading"></loading>
-  <v-tabbar></v-tabbar>
+  <v-tabbar v-if="showTabbar"></v-tabbar>
 </template>
 
 <script>
@@ -26,6 +26,8 @@
       return {
         pageTitle: "节点",
         isLoading: true,
+        showTabbar: true,
+        nodeTitleL: "",
         nodes: []
       }
     },
@@ -46,6 +48,9 @@
             this.isLoading = false
           }
         })
+      },
+      toggleTabbar: function (event) {
+        this.showTabbar = !this.showTabbar
       }
     },
     components: {

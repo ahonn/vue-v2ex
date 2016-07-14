@@ -9,7 +9,7 @@
       <div class="content">
         <h3 v-text="topic.title"></h3>
         <div class="info">
-          <span class="node" v-text="topic.node.title"></span>
+          <span class="node" v-text="topic.node.title" v-link="{ name: 'node', params: { name: topic.node.name } }"></span>
           <span class="author" v-text="topic.member.username"></span>
           <span class="created" v-text="topic.created | getTimeFromNow"></span>
           <span class="replies" v-text="topic.replies"></span>

@@ -43,8 +43,8 @@
       color: #334;
 
       dt {
-        padding: 10px 0px;
-        font-size: 22px;
+        padding: 5px 0px;
+        font-size: 18px;
       }
 
       dd {

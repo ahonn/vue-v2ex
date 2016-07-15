@@ -1,7 +1,7 @@
 <template>
   <v-header :page-title="nodeTopics[0].node.title" :show-back="true"></v-header>
   
-  <section id="topics">
+  <section id="nodeTopics">
     <div class="topic-item" v-for="topic in nodeTopics" v-link="{ name: 'topic', params: { id: topic.id } }">
       <div class="avatar">
         <img :src="topic.member.avatar_normal" :alt="topic.member.username" />
@@ -68,7 +68,7 @@
 <style lang="less">
   @import '~vux/dist/vux.css';
 
-  #topics {
+  #nodeTopics {
     margin: 46px 15px 48px;
 
     .topic-item {

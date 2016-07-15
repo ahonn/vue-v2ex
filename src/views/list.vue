@@ -104,18 +104,15 @@
         }
 
         .info {
-          color: #888;
+          color: #666;
           margin-top: 5px;
-          font-size: 11px;
-
-          .author {
-            font-size: 13px;
-          }
+          font-size: 12px;
 
           .node::after,
           .author::after {
-            content: "-";
-            margin-left: 3px;
+            content: "·";
+            margin-left: 5px;
+            font-weight: 600;
           }
 
           .replies {

@@ -31,6 +31,12 @@ export default function (router) {
       component: function (resolve) {
         require(['./views/node.vue'], resolve);
       }
+    },
+    '/about': {
+      name: 'about',
+      component: function (resolve) {
+        require(['./views/about.vue'], resolve);
+      }
     }
   })
 }

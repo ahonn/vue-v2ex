@@ -28,6 +28,7 @@
           },
           {
             name: "关于",
+            link: "about",
             src: "http://7xqvel.com1.z0.glb.clouddn.com/about.png"
           }
         ]

@@ -3,7 +3,7 @@
   
   <section id="about">
     <dl class="info">
-      <dt>关于 vue-v2ex</dt>
+      <dt>关于项目</dt>
       <dd>该项目是基于 V2EX 的 API, 使用 Vue.js 完成的 Web App</dd>
       <dt>项目源码</dt>
       <dd><a href="https://github.com/ahonn/vue-v2ex">https://github.com/ahonn/vue-v2ex</a></dd>

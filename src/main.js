@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import Hljs from 'highlight.js'
 
+import app from './App.vue'
 import routerMap from './routers'
 import filters from './filters'
 
@@ -20,7 +21,6 @@ Vue.directive('highlightjs', function() {
 
 Vue.config.debug = true
 
-var app = Vue.extend({})
 let router = new VueRouter()
 routerMap(router)
 

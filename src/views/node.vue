@@ -66,8 +66,6 @@
 </script>
 
 <style lang="less">
-  @import '~vux/dist/vux.css';
-
   #nodeTopics {
     margin: 46px 15px 48px;
 

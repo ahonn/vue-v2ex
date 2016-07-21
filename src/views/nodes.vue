@@ -66,7 +66,6 @@
 </script>
 
 <style lang="less">
-  @import '~vux/dist/vux.css';
 
   #nodes {
     padding-top: 44px;

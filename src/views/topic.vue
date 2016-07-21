@@ -81,7 +81,6 @@
 </script>
 
 <style lang="less">
-  @import '~vux/dist/vux.css';
 
   #topic {
     margin: 60px 15px 48px;

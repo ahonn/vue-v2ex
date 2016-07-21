@@ -33,7 +33,6 @@
 </script>
 
 <style lang="less"> 
-  @import '~vux/dist/vux.css';
 
   #about {
     margin: 46px 15px 48px;

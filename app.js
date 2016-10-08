@@ -53,5 +53,5 @@ app.get('/api/node/:name', function (req, res) {
   getJSON(v2exUrl, res)
 })
 
-app.listen(80)
-console.log('Express started on 127.0.0.1:80')
+app.listen(8080)
+console.log('Express started on 127.0.0.1:8080')
